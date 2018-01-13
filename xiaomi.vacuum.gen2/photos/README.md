@@ -1,0 +1,1 @@
+Pictures were taken by Dennis Giese (contact: dgiese@seemoo.tu-darmstadt.de). If you use them please add the source and acknowledgement.
