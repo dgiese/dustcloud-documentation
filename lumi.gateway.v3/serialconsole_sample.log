@@ -1,0 +1,283 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2017.09.16 01:29:54 =~=~=~=~=~=~=~=~=~=~=~=
+# help
+
+help 
+system-conf 
+echo <on/off>
+psm-get <module> <variable>
+psm-set <module> <variable> <value>
+psm-delete <module> <variable>
+psm-erase 
+psm-dump 
+miio-test (enter factory mode)
+ver app version
+mac mac
+LED01 LED RED ON
+LED11 LED Green ON
+LED21 LED BLUE ON
+LED3 LED white ON
+LED00 LED  OFF
+LUMEN illumination value
+speaker 
+removezigbee 
+cmd_chk_zig 
+m_play m_play m_3
+start_zigbee 
+erase_zigbee_psm 
+clear_zigbee_all 
+test_zigbee_rf test_zigbee_rf 26
+set_sn set_sn sn123456
+set_hd_ver set_hd_ver ver123
+get_sn 
+get_hd_ver 
+toggle_print 
+wifi 
+set_led_mode 
+cali_temp cali_temp 25
+get_zig_temp get_zig_temp
+get_net_stat get_net_stat
+test_flash test_flash
+exit_factory exit_factory
+get_acomp get_acomp
+get_reg get_reg
+set_reg set_reg
+set_sale_mode set_sale_mode
+get_sale_mode get_sale_mode
+reset_lumi_bind reset_lumi_bind
+reboot 
+restore 
+updatefw <http_url>
+updatewififw <http_url>
+pp print partition info
+pv print version
+fatfs-ls 
+fatfs-rename 
+fatfs-delfs 
+fatfs-mkfs 
+sound-play <filename>
+fm <3:KEY_PAUSE;4:KEY_PREV;5:KEY_NEXT>
+
+# pv pri=eSL_WriteMessage= t=0010,l=0,data=
+=eSL_WriteMessage= t=9f0a,l=0,data=
+zigbee temperature is:28
+nt version
+JENKINS BUILD NUMBER: N/A
+BUILD TIME: Apr 20 2016 19:53:19
+BUILT BY: zf
+firmware: 1.2.6
+MIIO APP VER: 140
+MIIO WIFI VER: SD878x-14.76.36.p84-702.1.0-WM
+MIIO MCU VER: 0141
+
+# get_hd_ver
+hd_ver:1
+
+# pp print partition info
+===partition table:
+magic:0x54504d57
+version:1
+partition entry no:9
+gen_level:0
+crc:0x2830200f
+===partition info:
+device:0 gen_level:1 name:boot2 size:24576 start:0x0 type:0
+device:0 gen_level:1 name:psm size:16384 start:0x6000 type:4
+device:0 gen_level:1 name:appfw size:614400 start:0xa000 type:1
+device:0 gen_level:1 name:userdata size:40960 start:0xa0000 type:6
+device:0 gen_level:1 name:mcufw size:393216 start:0xaa000 type:5
+device:0 gen_level:1 name:wififw size:196608 start:0x10a000 type:2
+device:0 gen_level:1 name:wififw size:196608 start:0x13a000 type:2
+device:0 gen_level:1 name:appfw size:614400 start:0x16a000 type:1
+device:0 gen_level:1 name:musicfw size:14680064 start:0x200000 type:7
+device:0 gen_level:1 name:appfw size:614400 start:0xa000 type:1
+device:0 gen_level:1 name:appfw size:614400 start:0x16a000 type:1
+
+# help
+
+help 
+system-conf 
+echo <on/off>
+psm-get <module> <variable>
+psm-set <module> <variable> <value>
+psm-delete <module> <variable>
+psm-erase 
+psm-dump 
+miio-test (enter factory mode)
+ver app version
+mac mac
+LED01 LED RED ON
+LED11 LED Green ON
+LED21 LED BLUE ON
+LED3 LED white ON
+LED00 LED  OFF
+LUMEN illumination value
+speaker 
+removezigbee 
+cmd_chk_zig 
+m_play m_play m_3
+start_zigbee 
+erase_zigbee_psm 
+clear_zigbee_all 
+test_zigbee_rf test_zigbee_rf 26
+set_sn set_sn sn123456
+set_hd_ver set_hd_ver ver123
+get_sn 
+get_hd_ver 
+toggle_print 
+wifi 
+set_led_mode 
+cali_temp cali_temp 25
+get_zig_temp get_zig_temp
+get_net_stat get_net_stat
+test_flash test_flash
+exit_factory exit_factory
+get_acomp get_acomp
+get_reg get_reg
+set_reg set_reg
+set_sale_mode set_sale_mode
+get_sale_mode get_sale_mode
+reset_lumi_bind reset_lumi_bind
+reboot 
+restore 
+updatefw <http_url>
+updatewififw <http_url>
+pp print partition info
+pv print version
+fatfs-ls 
+fatfs-rename 
+fatfs-delfs 
+fatfs-mkfs 
+sound-play <filename>
+fm <3:KEY_PAUSE;4:KEY_PREV;5:KEY_NEXT>
+
+# fatfs-ls
+----A 1980/00/00 00:00     71292  M_0
+
+----A 1980/00/00 00:00    125892  M_1
+
+----A 1980/00/00 00:00     38558  M_2
+
+----A 1980/00/00 00:00     48024  M_3
+
+----A 1980/00/00 00:00     38478  M_4
+
+----A 1980/00/00 00:00     40235  M_5
+
+----A 1980/00/00 00:00     98979  M_6
+
+----A 1980/00/00 00:00     95686  M_7
+
+----A 1980/00/00 00:00     42404  M_8
+
+----A 1980/00/00 00:00     12547  M_10
+
+----A 1980/00/00 00:00      9079  M_11
+
+----A 1980/00/00 00:00     30423  M_12
+
+----A 1980/00/00 00:00     26051  M_13
+
+----A 1980/00/00 00:00     86000  M_20
+
+----A 1980/00/00 00:00    103590  M_21
+
+----A 1980/00/00 00:00    138138  M_22
+
+----A 1980/00/00 00:00     98299  M_23
+
+----A 1980/00/00 00:00    108500  M_24
+
+----A 1980/00/00 00:00     98555  M_25
+
+----A 1980/00/00 00:00     94245  M_26
+
+----A 1980/00/00 00:00     97516  M_27
+
+----A 1980/00/00 00:00    115670  M_28
+
+----A 1980/00/00 00:00     79775  M_29
+
+----A 1980/00/00 00:00      4223  ARM_ST
+
+----A 1980/00/00 00:00      1149  ARM_OK
+
+----A 1980/00/00 00:00      1898  D_ARM_OK
+
+----A 1980/00/00 00:00     29966  C_ROUTER
+
+----A 1980/00/00 00:00      9949  CON_ING
+
+----A 1980/00/00 00:00      6668  CON_ED
+
+----A 1980/00/00 00:00      6400  Z_JOINED
+
+----A 1980/00/00 00:00     13838  EN_JOIN
+
+----A 1980/00/00 00:00      6476  FAIL_AG
+
+----A 1980/00/00 00:00      6533  VOLUME
+
+----A 1980/00/00 00:00     45012  FAC_TEST
+
+----A 1980/00/00 00:00      7055  CON_OK
+
+----A 1980/00/00 00:00      8735  DELETED
+
+----A 1980/00/00 00:00     15522  FAIL_JN
+
+----A 1980/00/00 00:00    185970  OTA.BIN
+
+----A 1980/00/00 00:00      6354  FM_TIP
+
+  39 File(s),2053684 bytes total
+   0 Dir(s)
+
+# =eSL_WriteMessage= t=0010,l=0,data=
+=eSL_WriteMessage= t=9f0a,l=0,data=
+zigbee temperature is:29
+
+# get_sale_mode
+sale mode:0
+
+# wifi
+Wifi Rssi:-98
+# wifi
+Wifi Rssi:-98
+# osm   psm-dump
+network.led_mode = 1
+ot_config.enauth = 1
+ot_config.ot_token = 4b4c739d582036axxxx
+ot_config.psm_model = lumi.gateway.v3
+ot_config.mcu_version = 0141
+network.clock = 
+network.hd_ver = 1
+network.pd_sn = SLMGFA1710001234
+network.en_connect_tip = 1
+network.device_list = 
+ot_config.ep_list = 
+network.version_list = 
+network.fac_zig_joined = 1
+ot_config.boot_cnt = 22
+
+# =eSL_WriteMessage= t=0010,l=0,data=
+=eSL_WriteMessage= t=9f0a,l=0,data=
+zigbee temperature is:30
+
+
+# =eSL_WriteMessage= t=0010,l=0,data=
+=eSL_WriteMessage= t=9f0a,l=0,data=
+zigbee temperature is:30
+
+# get_reg
+times:0
+
+# system-conf
+SDK version: 3.1
+Compiler version: 4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]
+CPU clock frequency: 200000000Hz
+Code execution mode: XIP
+
+help system-conf echo psm-get psm-set psm-delete psm-erase psm-dump miio-test ver mac LED01 LED11 LED21 LED3 LED00 LUMEN speaker removezigbee cmd_chk_zig m_play start_zigbee erase_zigbee_psm clear_zigbee_all test_zigbee_rf set_sn set_hd_ver get_sn get_hd_ver toggle_print wifi set_led_mode cali_temp get_zig_temp get_net_stat test_flash exit_factory get_acomp get_reg set_reg set_sale_mode get_sale_mode reset_lumi_bind reboot restore updatefw updatewififw pp pv fatfs-ls fatfs-rename fatfs-delfs fatfs-mkfs sound-play fm 
+# =eSL_WriteMessage= t=0010,l=0,data=
+=eSL_WriteMessage= t=9f0a,l=0,data=
+zigbee temperature is:30
