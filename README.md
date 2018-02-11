@@ -1,6 +1,6 @@
 Welcome to our repository for documentation of hacking and rooting of the Xiaomi devices. 
 
-You can find the repository to root your vacuum robot [here](https://github.com/dgiese/dustcloud).
+You can find the repository to root your Xiaomi Smart Home device [here](https://github.com/dgiese/dustcloud).
 
 Recording of our talk at 34C3: https://media.ccc.de/v/34c3-9147-unleash_your_smart-home_devices_vacuum_cleaning_robot_hacking
 
@@ -14,7 +14,7 @@ Recording of our talk at 34C3: https://media.ccc.de/v/34c3-9147-unleash_your_sma
 ### Prof. Guevara Noubir (CCIS, Northeastern University)
 <a href="http://www.ccs.neu.edu/home/noubir/Home.html">![CCIS logo](https://github.com/dgiese/dustcloud/raw/master/gfx/CCISLogo_S_gR.png)</a>
 # Media coverage:
-* https://www.kaspersky.co.uk/blog/xiaomi-mi-robot-hacked/12567/
+* https://www.kaspersky.com/blog/xiaomi-mi-robot-hacked/20632/
 * https://www.golem.de/news/xiaomi-mit-einem-stueck-alufolie-autonome-staubsauger-rooten-1712-131883.html
 * http://www.zeit.de/digital/datenschutz/2017-12/34c3-hack-staubsauger-iot
 * https://hackaday.com/2017/12/27/34c3-the-first-day-is-a-doozy/
