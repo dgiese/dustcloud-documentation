@@ -1,0 +1,29 @@
+_|      _|  _|_|_|  _|_|_|    _|_|
+_|_|  _|_|    _|      _|    _|    _|
+_|  _|  _|    _|      _|    _|    _|
+_|      _|    _|      _|    _|    _|
+_|      _|  _|_|_|  _|_|_|    _|_|
+JENKINS BUILD NUMBER: 87
+BUILD TIME: Oct 14 2015 14:45:35
+BUILT BY: jenkins
+firmware: 1.2.4
+MIIO APP VER: 16
+MIIO WIFI VER: SD878x-193.104.9.p243-702.1.0-WM
+MIIO MCU VER: N/A
+not skip factory mode
+[sdio] Card reset successful
+[sdio] Card Version - (0x32)
+[sdio] Card initialization successful
+Calibration successful!
+[adc] samples to be transferred 10
+[af] app_ctrl: prev_fw_version=0
+[net] Initializing TCP/IP stack
+digital_did is 57481234
+mac address is 34ce00aabbcc
+last four byte of key is aabbccdd
+
+system-conf
+SDK version: 3.1
+Compiler version: 4.8.4 20140725 (release) [ARM/embedded-4_8-branch revision 213147]
+CPU clock frequency: 200000000Hz
+Code execution mode: XIP
