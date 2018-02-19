@@ -1,0 +1,34 @@
+_|      _|  _|_|_|  _|_|_|    _|_|
+_|_|  _|_|    _|      _|    _|    _|
+_|  _|  _|    _|      _|    _|    _|
+_|      _|    _|      _|    _|    _|
+_|      _|  _|_|_|  _|_|_|    _|_|
+JENKINS BUILD NUMBER: 125
+BUILD TIME: Jul  1 2016 14:41:33
+BUILT BY: work
+firmware: 1.3.1
+MIIO APP VER: 40
+MIIO WIFI VER: SD878x-193.104.9.p243-702.1.0-WM
+MIIO MCU VER: N/A
+not skip factory mode
+before set prod model get
+model get: yeelink.light.mono1
+[sdio] Card reset successful
+[sdio] Card Version - (0x32)
+[sdio] Card initialization successful
+Calibration successful!
+[adc] samples to be transferred 10
+[af] app_ctrl: prev_fw_version=0
+[net] Initializing TCP/IP stack
+digital_did is 56291234
+mac address is 34ce0aabbcc
+last four byte of key is aabbccdd
+[MIIO-NORMAL-BOOT]
+[af] app_ctrl [sta]: State Change: INIT_SYSTEM => UNCONFIGURED
+[wlcm] Warn: NOTE: uAP will automatically switch to the channel that station is on.
+[af] app_ctrl [uap]: State Change: UAP_INIT => UAP_STARTING
+[net] configuring interface uap (with Static IP)
+[af] app_ctrl [uap]: State Change: UAP_STARTING => UAP_UP
+[adc] samples to be transferred 10
+[adc] samples to be transferred 10
+[adc] samples to be transferred 10
