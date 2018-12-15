@@ -1,0 +1,34 @@
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+x A B C D E F G H J K L M N P R
+
+A2 UART0 TX
+B3 UART0 RX
+D14 UART1 RX
+E14 UART1 TX
+E13/P8? UART2 TX
+F13/P9? UART2 RX
+
+R11: DM
+P11: DP
+
+
+Wifi Chip
+
+x
+x DM
+x DP	
+x GND	GND x

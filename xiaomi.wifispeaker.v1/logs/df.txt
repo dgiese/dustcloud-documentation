@@ -1,0 +1,10 @@
+root@OpenWrt:/etc# df -h
+Filesystem                Size      Used Available Use% Mounted on
+rootfs                  127.2M     66.0M     58.7M  53% /
+/dev/root               127.2M     66.0M     58.7M  53% /
+devtmpfs                512.0K         0    512.0K   0% /dev
+tmpfs                    56.8M    408.0K     56.4M   1% /tmp
+tmpfs                   512.0K         0    512.0K   0% /dev
+/dev/mmcblk0p11         120.0M      1.6M    109.4M   1% /data
+/dev/mmcblk0p12           6.5G    396.1M      5.8G   6% /media
+/dev/mmcblk0p3          120.0M     35.9M     75.1M  32% /cache

@@ -1,0 +1,630 @@
+
+CPU clock is 800MHz
+
+
+wait pll-0x03 target is 01d4 now it is 0x000001d4
+wait pll-0x1e target is 01d4 now it is 0x000001d4
+set ddr clock ok!
+Jun 30 201713:52:18PHY trainning Result=0x00000000
+
+Stage 00 Result 00000000
+Stage 01 Result 00000000
+Stage 02 Result 00000000
+DDR init use : 30962 us
+
+HHH
+Boot From SDIO C
+ucl decompress
+decompress true
+0x12345678
+Boot from internal device 1st SDIO C
+
+TE : 1251995
+
+System Started
+
+
+U-boot-00000-gf7838d6(m3_f40@beyond-emmc) (Jun 30 2017 - 13:51:55)
+
+aml_rtc_init
+DRAM:  128 MiB
+relocation Offset is: 05df0000
+show partition table: 
+part: 0, name :        dtb, size : 100000
+part: 1, name :       boot, size : 800000
+part: 2, name :     system, size : 8000000
+part: 3, name :       dtb1, size : 100000
+part: 4, name :      boot1, size : 800000
+part: 5, name :    system1, size : 8000000
+part: 6, name :      cache, size : 8000000
+part: 7, name :   userdata, size : 8000000
+part: 8, name :      media, size : end 
+aml_card_type=0x200
+MMC:   [mmc_register] add mmc dev_num=0, port=1, if_type=6
+[mmc_register] add mmc dev_num=1, port=2, if_type=6
+SDIO Port B: 0, SDIO Port C: 1
+ reboot times 0
+ reboot times 1
+enter emmc boot
+[mmc_init] SDIO Port C:1, if_type=6, initialized OK!
+[mmc_get_partition_table] skip cache partition.
+Partition table get from SPL is : 
+        name                        offset              size              flag
+===================================================================================
+   0: bootloader                         0            100000                  0
+   1: reserved                      100000            100000                  0
+   2: cache                         200000           8000000                  1
+   3: env                          8200000            100000                  0
+   4: dtb                          8300000            100000                  1
+   5: boot                         8400000            800000                  1
+   6: system                       8c00000           8000000                  1
+   7: dtb1                        10c00000            100000                  1
+   8: boot1                       10d00000            800000                  1
+   9: system1                     11500000           8000000                  1
+  10: userdata                    19500000           8000000                  1
+  11: media                       21500000         1b0b00000                  4
+mmc read lba=0x800, blocks=0x1
+mmc read lba=0x801, blocks=0x1
+mmc_read_partition_tbl: mmc read partition OK!
+eMMC/TSD partition table have been checked OK!
+i=0,register --- emmc_key
+device_boot_flag=2
+MMC BOOT, emmc_env_relocate_spec : env_relocate_spec 74 
+set_storage_device_flag: store 2
+In:    serial
+Out:   serial
+Err:   serial
+done.
+init suspend firmware done. (ret:0)
+## Error: "upgrade_check" not defined
+Hit Enter key to stop autoboot -- :  0 
+exit abortboot: 0
+## Booting kernel from Legacy Image at 82000000 ...
+   Image Name:   Linux-3.10.33
+   Image Type:   ARM Linux Kernel Image (gzip compressed)
+   Data Size:    4269534 Bytes = 4.1 MiB
+   Load Address: 80008000
+   Entry Point:  80008000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 83000000
+   Booting using the fdt blob at 0x83000000
+   Uncompressing Kernel Image ... OK
+uboot time: 3599075 us.
+machid from environment: 0xb8e 
+EFUSE machid is not set.
+Using machid 0xb8e from environment
+From device tree /memory/ node aml_reserved_end property, for relocate ramdisk and fdt, relocate_addr: 0x84007001
+   Loading Device Tree to 84000000, end 84006238 ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.10.33-g265b042 (builder@sq-mitv-sb-build00) (gcc version 4.8.3 (OpenWrt/Linaro GCC 4.8-2014.04 r42943) ) #1 PREEMPT Fri Jun 30 14:18:08 CST 2017
+[    0.000000] CPU: ARMv7 Processor [412fc094] revision 4 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Amlogic Meson3, model: AMLOGIC
+[    0.000000] physical memory start address is 0x80000000
+[    0.000000] reserved_end is 853fffff 
+[    0.000000]  reserved 0x87ef0000-0x87f00000 1M memory for firmware
+[    0.000000] Total memory is  128 MiB
+[    0.000000] Reserved low memory from 0x85000000 to 0x853fffff, size:   4 MiB 
+[    0.000000]  mesonfb0(low)           : 0x85100000 - 0x85300000 (  2 MiB)
+[    0.000000]  mesonfb1(low)           : 0x85300000 - 0x85400000 (  1 MiB)
+[    0.000000] [get_storage_device] storage_flag=2
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 31488
+[    0.000000] free_area_init_node: node 0, pgdat c081b4e8, node_mem_map c0879000
+[    0.000000]   Normal zone: 254 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 31488 pages, LIFO batch:7
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 31234
+[    0.000000] Kernel command line: root=/dev/mmcblk0p10 rootfstype=ext4 rootwait init=/sbin/init console=ttyS0,115200n8 no_console_suspend debug nohlt a9_clk=600M clk81=200M storage=2
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 80MB 43MB = 123MB total
+[    0.000000] Memory: 116044k/116044k available, 9908k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xc8000000 - 0xff000000   ( 880 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7f00000   ( 127 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc079f3a0   (7773 kB)
+[    0.000000]       .init : 0xc07a0000 - 0xc07cd0cc   ( 181 kB)
+[    0.000000]       .data : 0xc07ce000 - 0xc081c000   ( 312 kB)
+[    0.000000]        .bss : 0xc081c000 - 0xc0878450   ( 370 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:128
+[    0.000000] sched_clock: 32 bits at 1000kHz, resolution 1000ns, wraps every 4294967ms
+[    0.000000] Global timer: MESON TIMER-A (c07deb80) initialized
+[    0.000000] Disable timerA
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] meson_serial_console_setup
+[    0.000000] console [ttyS0] enabled
+[    0.278614] Calibrating delay loop... 795.44 BogoMIPS (lpj=3977216)
+[    0.320063] pid_max: default: 32768 minimum: 301
+[    0.321847] Security Framework initialized
+[    0.325811] SELinux:  Initializing.
+[    0.329323] SELinux:  Starting in permissive mode
+[    0.334066] Mount-cache hash table entries: 512
+[    0.339411] CPU: Testing write buffer coherency: ok
+[    0.343818] Setting up static identity map for 0xc05ce308 - 0xc05ce360
+[    0.350117] L310 cache controller enabled
+[    0.353905] l2x0: 8 ways, 512 sets, CACHE_ID 0x4100a0c8,  Cache size: 131072 B
+[    0.361148]       AUX_CTRL 0x3e420000, PERFETCH_CTRL 0x30000006, POWER_CTRL  0x00000000
+[    0.369126]       TAG_LATENCY 0x00000111, DATA_LATENCY 0x00000111
+[    0.376233] devtmpfs: initialized
+[    0.380134] clkrate [ xtal   ] : 24000000
+[    0.382442] clkrate [ pll_sys        ] : 800000000
+[    0.386769] clkrate [ pll_fixed      ] : 800000000
+[    0.391227] clkrate [ pll_ddr        ] : 468000000
+[    0.395468] clkrate [ a9_clk         ] : 800000000
+[    0.399642] clkrate [ clk81  ] : 200000000
+[    0.404912] pinctrl core: initialized pinctrl subsystem
+[    0.409156] NET: Registered protocol family 16
+[    0.414138] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.434672] amlogic_gpio gpio: Probed amlogic meson3 GPIO driver
+[    0.435409] register lm device lm-root
+[    0.439098] register lm device lm0
+[    0.443372] Init pinux probe!
+[    0.445670] pinmux-m3 pinmux: Probed amlogic pinctrl driver
+[    0.451352] aml_i2c version: 20140813
+[    0.454471] plat->state_name:default
+[    0.457945] master_no = 1, master_regs=f1108500
+[    0.463057] aml-i2c i2c-A: add adapter aml_i2c_adap1(c79520a8)
+[    0.468287] aml-i2c i2c-A: aml i2c bus driver.
+[    0.532777] bio: create slab <bio-0> at 0
+[    0.534557] SCSI subsystem initialized
+[    0.535469] usbcore: registered new interface driver usbfs
+[    0.541288] usbcore: registered new interface driver hub
+[    0.545994] usbcore: registered new device driver usb
+[    0.555926] Advanced Linux Sound Architecture Driver Initialized.
+[    0.557957] Bluetooth: Core ver 2.16
+[    0.560901] NET: Registered protocol family 31
+[    0.564818] Bluetooth: HCI device and connection manager initialized
+[    0.571450] Bluetooth: HCI socket layer initialized
+[    0.576046] Bluetooth: L2CAP socket layer initialized
+[    0.581202] Bluetooth: SCO socket layer initialized
+[    0.586869] cfg80211: Calling CRDA to update world regulatory domain
+[    0.593929] Switching to clocksource Timer-E
+[    0.628341] NET: Registered protocol family 2
+[    0.628883] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.634036] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.640893] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.646965] TCP: reno registered
+[    0.649948] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.655776] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.662324] NET: Registered protocol family 1
+[    0.666820] RPC: Registered named UNIX socket transport module.
+[    0.672296] RPC: Registered udp transport module.
+[    0.677067] RPC: Registered tcp transport module.
+[    0.681692] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.688236] wifi_dev_probe
+[    0.690830] wifi_dt : interrupt_pin=GPIOA_17
+[    0.695097] wifi_dt : irq_num=null
+[    0.698514] wifi_dt : irq_trigger_type=GPIO_IRQ_HIGH
+[    0.703443] wifi_dt : power_on_pin=GPIOX_10
+[    0.707640] wifi_dt : clock_32k_pin=GPIOAO_11
+[    0.711972] interrupt_pin=153, irq_num=4, irq_trigger_type=0, power_on_pin=33,clock_32k_pin=175
+[    0.723145] audit: initializing netlink socket (disabled)
+[    0.726109] type=2000 audit(0.650:1): initialized
+[    0.744566] VFS: Disk quotas dquot_6.5.2
+[    0.744982] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.753733] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.755901] exFAT: Core Version 1.2.4
+[    0.759542] exFAT: FS Version 1.2.4
+[    0.764444] NFS: Registering the id_resolver key type
+[    0.767821] Key type id_resolver registered
+[    0.771564] Key type id_legacy registered
+[    0.775618] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.786452] fuse init (API version 7.22)
+[    0.790952] msgmni has been set to 226
+[    0.793017] SELinux:  Registering netfilter hooks
+[    0.800172] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.805064] io scheduler noop registered
+[    0.809219] io scheduler deadline registered
+[    0.813625] io scheduler cfq registered (default)
+[    0.818388] meson3-pwm meson_pwm: pinctrl_name = meson3-pwm1
+[    0.823594] meson3-pwm meson_pwm: register pwm device.. meson_pwm_probe
+[    1.040584] loop: module loaded
+[    1.042506] tun: Universal TUN/TAP device driver, 1.6
+[    1.043134] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.050252] PPP generic driver version 2.4.2
+[    1.054244] PPP BSD Compression module registered
+[    1.058639] PPP Deflate Compression module registered
+[    1.063332] PPP MPPE Compression module registered
+[    1.068262] NET: Registered protocol family 24
+[    1.073654] usbcore: registered new interface driver usb-storage
+[    1.079538] mousedev: PS/2 mouse device common for all mice
+[    1.085240] i2c /dev entries driver
+[    1.088382] Bluetooth: HCI UART driver ver 2.2
+[    1.092030] Bluetooth: HCI H4 protocol initialized
+[    1.098755] zram: Created 1 device(s) ...
+[    1.101289] ashmem: initialized
+[    1.104368] aml_wdt_driver_init,303
+[    1.107649] ** disable watchdog
+[    1.110729] one-secod=100000,min_timeout=1,max_timeout=41,default_timeout=10,reset_watchdog_method=0,reset_watchdog_time=2,shutdown_timeout=10,firmware_timeout=6,suspend_timeout=6
+[    1.127579] AML Watchdog Timer probed done 
+[    1.131132] keys===========================================
+[    1.136314] keys_devno=fa00000
+[    1.140147] securitykey: device aml_keys created
+[    1.143986] amlkeys=0
+[    1.146490] platform_driver_register--aml_keys_driver--------------------
+[    1.153782] set uart_ao pinmux use pinctrl subsystem
+[    1.158251] P_AO_RTI_PIN_MUX_REG:1800
+[    1.161658] start uart_ao_ttyS0:(irq = 90)
+[    1.165716] register uart_ao ok
+[    1.169545] set uart_a pinmux use pinctrl subsystem
+[    1.173720] P_AO_RTI_PIN_MUX_REG:1800
+[    1.177565] start uart_a_ttyS1:(irq = 26)
+[    1.181376] register uart_a ok
+[    1.184741] dwc_otg: version 2.20a 13-Jan-2012
+[    1.189056] dwc_otg lm-root: dwc_otg_driver_probe(c794c000)
+[    1.194431] dwc_otg_driver_probe NOT match
+[    1.198630] dwc_otg lm0: dwc_otg_driver_probe(c794c200)
+[    1.203776] usb0: type: 1, speed: 0, config: 0, dma: 0, id: 1, phy: f1108404, ctrl: f9040000
+[    1.212264] USB use clock source: XTAL input
+[    1.218885] dwc_otg lm0: core work at High speed.
+[    1.221138] dwc_otg lm0: DMA config: DISABLE
+[    1.636611] dwc_otg lm0: Working on port type = HOST
+[    1.636656] DWC_otg: Using DMA mode
+[    1.639418] dwc_otg lm0: DWC OTG Controller
+[    1.643644] dwc_otg lm0: new USB bus registered, assigned bus number 1
+[    1.650203] dwc_otg lm0: irq 30, io mem 0x00000000
+[    1.654934] DWC_otg: Init: Port Power? op_state=1
+[    1.659625] DWC_otg: Init: Power Port (0)
+[    1.663600] set usb port power on (board gpio 143)!
+[    1.669606] hub 1-0:1.0: USB hub found
+[    1.672242] hub 1-0:1.0: 1 port detected
+[    1.676785] Amlogic nand flash Kernel driver, Version K1.06.015 (c) 2010 Amlogic Inc.
+[    1.683958] ####Version of Uboot must be newer than U1.06.011!!!!! 
+[    1.690382] ===========================================m3_nand_probe:1306,nand device tree ok,dev-name:nand2
+[    1.700078] m3_get_nand_platform:1750,find enable pad finished
+[    1.705883] m3_get_nand_platform:1763,find busy_pad finished
+[    1.711618] m3_get_nand_platform:1775,find timming_mode finished
+[    1.717596] m3_get_nand_platform:1787,find bch_mode finished
+[    1.723197] m3_get_nand_platform:1799,find plane_modefinished
+[    1.728977] m3_get_nand_platform:1855,parse dts
+[    1.733465] chip->controller=c0869640
+[    1.737143] ###plat->platform_nand_data.chip.nr_chips =1
+[    1.742432] init bus_cycle=17, bus_timing=10, start_cycle=10, end_cycle=10,system=5.0ns
+[    1.750658] No NAND device found
+[    1.753826] NAND device id: 8 e8 e8 e8 e8 e8 
+[    1.758041] No NAND device found!!!
+[    1.761516] m3_get_nand_platform:1750,find enable pad finished
+[    1.767440] m3_get_nand_platform:1763,find busy_pad finished
+[    1.772963] m3_get_nand_platform:1775,find timming_mode finished
+[    1.778997] m3_get_nand_platform:1787,find bch_mode finished
+[    1.784619] m3_get_nand_platform:1799,find plane_modefinished
+[    1.790390] m3_get_nand_platform:1855,parse dts
+[    1.794886] chip->controller=c0869640
+[    1.798553] ###plat->platform_nand_data.chip.nr_chips =1
+[    1.803853] init bus_cycle=17, bus_timing=10, start_cycle=10, end_cycle=10,system=5.0ns
+[    1.812023] No NAND device found
+[    1.815234] NAND device id: 8 e8 e8 e8 e8 e8 
+[    1.819452] No NAND device found!!!
+[    1.823372] efuse===========================================
+[    1.829321] efuse: device efuse created
+[    1.832643] efuse--------------------------------------------
+[    1.838249] SARADC Driver init.
+[    1.841596] __saradc_probe__
+[    1.986710] saradc calibration: ref_val = 513
+[    1.986744] saradc calibration: ref_nominal = 512
+[    1.990118] saradc calibration: coef = 4096
+[    1.994570] ADC Keypad Driver init.
+[    1.998010] ==kp_probe==
+[    2.000327] chan #4 used for ADC key
+[    2.003865] volup key(103) registed.
+[    2.007507] voldn key(108) registed.
+[    2.010999] chann key(106) registed.
+[    2.014565] chanp key(105) registed.
+[    2.018567] input: adc_keypad as /devices/platform/adc_keypad.4/input/input0
+[    2.025666] adc keypad register input device completed.
+[    2.030642] adc keypad major:248
+[    2.034640] Encoder Keypad Driver init.
+[    2.037878] Enter encoder_key_probe
+[    2.041171] encoder_key_probe: key_num = 4
+[    2.045191] encoder_key_probe: key[0]->plus_code = 75
+[    2.050321] encoder_key_probe: key[0]->minus_code = 77
+[    2.055371] encoder_key_probe: key[0]->A_pin = 150
+[    2.060297] encoder_key_probe: key[0]->B_pin = 149
+[    2.064939] encoder_key_probe: key[0]->rising_irq = 1
+[    2.070033] encoder_key_probe: key[0]->falling_irq = 0
+[    2.075119] encoder_key_probe: key[1]->plus_code = 72
+[    2.080190] encoder_key_probe: key[1]->minus_code = 80
+[    2.085297] encoder_key_probe: key[1]->A_pin = 148
+[    2.090097] encoder_key_probe: key[1]->B_pin = 147
+[    2.094867] encoder_key_probe: key[1]->rising_irq = 3
+[    2.100073] encoder_key_probe: key[1]->falling_irq = 2
+[    2.105135] report_key_func 138 : 
+[    2.108408] encoder_key_probe 575 : key(75) registed.
+[    2.113484] encoder_key_probe 576 : [    2.116916] 77 key
+
+[    2.118887] report_key_func 138 : 75 key
+[    2.122974] key(77) registed.
+[    2.125926] encoder_key_probe 575 : key(72) registed.
+[    2.130972] encoder_key_probe 576 : key(80) registed.
+[    2.136446] input: encoder_keypad as /devices/platform/encoder_keypad.5/input/input1
+[    2.144346] encoder_key_probe: Encoder keypad major:247
+[    2.150187] GPIO Keypad Driver init.
+[    2.152672] gpio_key_probe
+[    2.155346] 1 key registed.
+[    2.158184] 28 key registed.
+[    2.160899] 32 key registed.
+[    2.163770] 59 key registed.
+[    2.166733] 60 key registed.
+[    2.169513] 61 key registed.
+[    2.172804] input: gpio_keypad as /devices/platform/gpio_keypad.7/input/input2
+[    2.180267] gpio keypad register input device completed.
+[    2.185013] gpio keypad major:246
+[    2.189509] wake_src_probe
+[    2.191020] 200 key registed.
+[    2.193959] 201 key registed.
+[    2.197211] 202 key registed.
+[    2.199876] 203 key registed.
+[    2.202833] 204 key registed.
+[    2.205791] 205 key registed.
+[    2.209261] input: wake_src as /devices/platform/wake_src.8/input/input3
+[    2.215904] register input device completed.
+[    2.220039] register_wakesrc_dev major:245
+[    2.224742] wake_src_init wake up source Driver init 0.
+[    2.229446] mmc driver version: 1.07, 2014-06-30: eMMC add hw reset function
+[    2.236982] host->base f1108c20
+[    2.239356] pdata->caps 107
+[    2.242072] pdata->caps2 0
+[    2.244771] get property:                     port, value:0x00000002
+[    2.251390] get property:                ocr_avail, value:0x00200000
+[    2.257534] get property:                    f_min, value:0x000493e0
+[    2.263823] get property:                    f_max, value:0x02faf080
+[    2.270313] get property:                  f_max_w, value:0x02faf080
+[    2.276525] get property:             max_req_size, value:0x00020000
+[    2.282943] get property:                  pinname, str:emmc
+[    2.288571] get property:                card_type, value:0x00000001
+[    2.294886] get property:                gpio_dat3, str:BOOT_3
+[    2.300876] [is_emmc_exist] host->storage_flag=2, POR_BOOT_VALUE=3
+[    2.352467] pdata->caps 107
+[    2.352497] pdata->caps2 0
+[    2.352563] get property:                     port, value:0x00000001
+[    2.361065] get property:                ocr_avail, value:0x00200000
+[    2.365072] get property:                    f_min, value:0x000493e0
+[    2.371448] get property:                    f_max, value:0x01c9c380
+[    2.377873] get property:                  f_max_w, value:0x01c9c380
+[    2.384196] get property:             max_req_size, value:0x00020000
+[    2.390626] get property:                  pinname, str:sd
+[    2.396025] get property:                card_type, value:0x00000003
+[    2.413643] emmc: BKOPS_EN bit is not set
+[    2.413689] ###check hw reset function is already enabled here
+[    2.419983] emmc: new high speed MMC card at address 0001, clock 50000000, 4-bit-bus-width
+[    2.426979] mmcblk0: emmc:0001 8GME4R 7.28 GiB 
+[    2.430851] mmcblk0boot0: emmc:0001 8GME4R partition 1 4.00 MiB
+[    2.436840] mmcblk0boot1: emmc:0001 8GME4R partition 2 4.00 MiB
+[    2.456707] usb 1-1: new high-speed USB device number 2 using dwc_otg
+[    2.459125]  mmcblk0: p1
+[    2.461035] Delete invalid mbr partition part c7affe00, part->partno 1
+[    2.467779] emmc read lba=0x800, blocks=0x1 OK!
+[    2.471679] emmc read lba=0x801, blocks=0x1 OK!
+[    2.475609] [mmc_read_partition_tbl] mmc read partition OK!
+[    2.481273] [aml_sdio_probe] aml_sdio_probe() success!
+[    2.486530] add_emmc_partition
+[    2.489745] device name=nand_key open error 
+[    2.493617] aml_keys: version 0 can not be init c08039dc
+[    2.499586] [mmcblk0p01]           bootloader  offset 0x000000000000, size 0x000000100000 
+[    2.507671] device name=emmc_key open error 
+[    2.511453] aml_keys: version 0 can not be init c08039dc
+[    2.516962] [mmcblk0p02]             reserved  offset 0x000000100000, size 0x000000100000 
+[    2.525461] [mmcblk0p03]                cache  offset 0x000000200000, size 0x000008000000 
+[    2.534678] aml_rtc rtc.0: rtc core: registered aml_rtc as rtc0
+[    2.541069] [mmcblk0p04]                  env  offset 0x000008200000, size 0x000000100000 
+[    2.548366] amlogic rfkill init
+[    2.550699] enter bt_probe of_node
+[    2.554012] not get gpio_en
+[    2.557471] [mmcblk0p05]                  dtb  offset 0x000008300000, size 0x000000100000 
+[    2.565246] not get gpio_wake
+[    2.568615] [mmcblk0p06]                 boot  offset 0x000008400000, size 0x000000800000 
+[    2.576962] [mmcblk0p07]               system  offset 0x000008c00000, size 0x000008000000 
+[    2.585085] [mmcblk0p08]                 dtb1  offset 0x000010c00000, size 0x000000100000 
+[    2.593478] [mmcblk0p09]                boot1  offset 0x000010d00000, size 0x000000800000 
+[    2.601745] BT_RADIO going: on
+[    2.604119] BCM_BT: going ON
+[    2.607649] [mmcblk0p10]              system1  offset 0x000011500000, size 0x000008000000 
+[    2.615782] [mmcblk0p11]             userdata  offset 0x000019500000, size 0x000008000000 
+[    2.624253] [mmcblk0p12]                media  offset 0x000021500000, size 0x0001b0b00000 
+[    2.632023] card key: card_blk_probe. 
+[    2.635543] emmc_key_init:428 emmc key lba_start:0x820,lba_end:0xa20 
+[    2.642067] i=0,register --- emmc_key
+[    2.645615] emmc key: emmc_key_init:450 ok. 
+[    2.649956] key 1 up
+[    2.652060] key 28 up
+[    2.654312] key 32 up
+[    2.657070] Exit aml_emmc_partition_ops OK.
+[    2.661151] key 59 up
+[    2.663023] key 60 up
+[    2.665275] key 61 down
+[    2.667829] wifi_request_32k_clk : OFF-->ON for bt_rfkill
+[    2.673110] clock_32k_pin(175) : (null)
+[    2.679723] clock_32k_pin(175) : sdio_wifi
+[    2.681465]  mmcblk0boot1: p1
+[    2.684240] mmcblk0boot1: p1 start 16065 is beyond EOD, [    2.689312] key 0 up
+truncated
+[    2.696140] usb-storage 1-1:1.0: USB Mass Storage device detected
+[    2.698872]  mmcblk0boot0: p1
+[    2.701346] mmcblk0boot0: p1 start 16065 is beyond EOD, truncated
+[    2.707860] scsi0 : usb-storage 1-1:1.0
+[    2.797121] Bluetooth: BlueSleep Mode Driver Ver 1.2
+[    2.797276] Bluetooth: bt_host_wake 154, bt_ext_wake 45
+[    2.801721] Bluetooth: host_wake_irq 5, polarity 1
+[    2.807004] Interrupt for sound system Driver init.
+[    2.811461] Enter int_sound_probe
+[    2.814651] ====== int_sound_probe int num 1
+[    2.819096] int_sound_probe: int_num = 1
+[    2.822827] int_sound_probe: key[0]->I_pin = 41
+[    2.827506] register_int_sound_dev major:244
+[    2.834677] *****enter pcm2bt_codec_probe
+[    2.835642] pcm2bt_codec_probe ok!
+[    2.839620] enter aml_dai_probe
+[    2.842609] [aml-spdif-dai]aml_spdif_probe 
+[    2.847195] aml: Failed to create debugfs directory
+[    2.851688] enter spdif_dit_probe 
+[    2.854579] aml_spdif_unmute 
+[    2.858308] --------aml_m3_codec_platform_probe---
+[    2.862816] enter aml_m3_audio_probe
+[    3.496760] aml_m3_codec aml_m3_codec.0: ASoC: Failed to add LINEOUT Playback Volume: -16
+[    3.499688] enter aml_set_bias_level level: 1
+[    3.503672] enter aml_set_bias_level level: 2
+[    3.508108] enter aml_set_bias_level level: 1
+[    3.512527] enter aml_set_bias_level level: 1
+[    3.516800] enter aml_set_bias_level level: 1
+[    3.521070] enter aml_set_bias_level level: 2
+[    3.525452] enter aml_set_bias_level level: 2
+[    3.529891] enter aml_asoc_init 
+[    3.533186] enter aml_set_bias_level level: 1
+[    3.537497] enter aml_set_bias_level level: 1
+[    3.541694] enter aml_set_bias_level level: 2
+[    3.546039] enter aml_set_bias_level level: 1
+[    3.550625] enter aml_set_bias_level level: 2
+[    3.554764] enter aml_set_bias_level level: 2
+[    3.559315] rtd c780c010 
+[    3.561704] cpu_dai c78ca800 
+[    3.564652] codec_dai c78cac00 
+[    3.567865] enter aml_platform_pcm_new (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[    3.576081] aml-i2s 0:playback preallocate_dma_buffer: area=c80e5000, addr=87100000, size=524288
+[    3.584865] aml-i2s 1:capture preallocate_dma_buffer: area=c8167000, addr=87080000, size=262144
+[    3.592799] aml_m3_card aml_m3_sound_card.2:  AML-M3 <-> aml-dai0 mapping ok
+[    3.599955] enter aml_set_bias_level level: 1
+[    3.604068] enter aml_set_bias_level level: 2
+[    3.608488] enter aml_set_bias_level level: 1
+[    3.612770] enter aml_set_bias_level level: 2
+[    3.617149] enter aml_set_bias_level level: 1
+[    3.621468] enter aml_set_bias_level level: 2
+[    3.626027] rtd c780c5d4 
+[    3.628491] cpu_dai c78caa00 
+[    3.631385] codec_dai c78cab00 
+[    3.634517] enter aml_platform_pcm_new (codec_dai: dit-hifi 0 cpu_dai: aml-spdif-dai.0 0)
+[    3.643658] aml-i2s 0:playback preallocate_dma_buffer: area=c81e8000, addr=87200000, size=524288
+[    3.652571] aml-i2s 1:capture preallocate_dma_buffer: area=c826a000, addr=87300000, size=262144
+[    3.660266] aml_m3_card aml_m3_sound_card.2:  dit-hifi <-> aml-spdif-dai.0 mapping ok
+[    3.668142] enter aml_set_bias_level level: 1
+[    3.672368] enter aml_set_bias_level level: 2
+[    3.676770] enter aml_set_bias_level level: 1
+[    3.681063] enter aml_set_bias_level level: 2
+[    3.685436] enter aml_set_bias_level level: 1
+[    3.689815] enter aml_set_bias_level level: 2
+[    3.694274] rtd c780cb98 
+[    3.696904] cpu_dai c78ca900 
+[    3.699679] codec_dai c78ca700 
+[    3.702811] enter aml_platform_pcm_new (codec_dai: pcm2bt-pcm 0 cpu_dai: aml-dai1 1)
+[    3.711395] enter aml_pcm_preallocate_dma_buffer stream: 0
+[    3.716273] aml_pcm_preallocate_dma_buffer allcoate buf->area: c82eb000 buf->addr: 0x87290000 buf->bytes: 65536
+[    3.726174] enter aml_pcm_preallocate_dma_buffer stream: 1
+[    3.731822] aml_pcm_preallocate_dma_buffer allcoate buf->area: c82fc000 buf->addr: 0x871d0000 buf->bytes: 65536
+[    3.741733] aml_m3_card aml_m3_sound_card.2:  pcm2bt-pcm <-> aml-dai1 mapping ok
+[    3.749333] enter aml_set_bias_level level: 1
+[    3.753450] enter aml_set_bias_level level: 2
+[    3.757858] enter aml_set_bias_level level: 1
+[    3.762150] enter aml_set_bias_level level: 2
+[    3.766518] enter aml_set_bias_level level: 1
+[    3.770893] enter aml_set_bias_level level: 2
+[    3.775276] enter aml_set_bias_level level: 1
+[    3.779587] enter aml_set_bias_level level: 1
+[    3.783897] enter aml_set_bias_level level: 2
+[    3.788276] enter aml_set_bias_level level: 1
+[    3.792596] enter aml_set_bias_level level: 2
+[    3.797122] enter aml_set_bias_level level: 2
+[    3.805382] input: AML-M3 hp switch as /devices/platform/aml_m3_sound_card.2/sound/card0/input4
+[    3.811316] enter aml_set_bias_level level: 1
+[    3.814348] enter aml_set_bias_level level: 2
+[    3.818812] enter aml_set_bias_level level: 1
+[    3.823049] enter aml_set_bias_level level: 2
+[    3.827453] enter aml_set_bias_level level: 1
+[    3.831747] enter aml_set_bias_level level: 2
+[    3.836399] =aml_m3_pinmux_init==,aml_m3_pinmux_init done,---0
+[    3.842972] GACT probability NOT on
+[    3.845422] Mirror/redirect action on
+[    3.849378] u32 classifier
+[    3.851758]     Actions configured
+[    3.855151] Netfilter messages via NETLINK v0.30.
+[    3.860014] nf_conntrack version 0.5.0 (1813 buckets, 7252 max)
+[    3.867152] ctnetlink v0.93: registering with nfnetlink.
+[    3.871365] scsi 0:0:0:0: Direct-Access     USB      Flash Disk       1100 PQ: 0 ANSI: 6
+[    3.879446] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    3.886121] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    3.895230] sd 0:0:0:0: [sda] 31129600 512-byte logical blocks: (15.9 GB/14.8 GiB)
+[    3.901449] sd 0:0:0:0: [sda] Write Protect is off
+[    3.904312] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[    3.909898] xt_time: kernel timezone is -0000
+[    3.914118] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    3.919702] arp_tables: (C) 2002 David S. Miller
+[    3.923738] TCP: cubic registered
+[    3.927241] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    3.936270] Initializing XFRM netlink socket
+[    3.943319] NET: Registered protocol family 10
+[    3.947583] mip6: Mobile IPv6
+[    3.947688] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    3.953880] sit: IPv6 over IPv4 tunneling driver
+[    3.958126]  sda: sda1
+[    3.964643] NET: Registered protocol family 17
+[    3.964763] NET: Registered protocol family 15
+[    3.969616] Bridge firewalling registered
+[    3.973271] NET: Registered protocol family 35
+[    3.977804] Key type dns_resolver registered
+[    3.981823] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[    3.987457] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    3.994724] Registering SWP/SWPB emulation handler
+[    3.999924] enter meson_pm_probe!
+[    4.007314] aml_rtc rtc.0: setting system clock to 1970-01-01 00:00:08 UTC (8)
+[    4.010185] meson_cpufreq: no voltage_control prop
+[    4.014794] voltage_control = 0
+[   [    4.023938] config uart_ao_ttyS0:: Character length 8bits/char
+[    4.036750] Changing uart_ao_ttyS0: baud from 0 to 115200
+[    4.058152] force enable DISCARD here for ext4 fs
+[    4.062002] checked enable EXT4 DISCARD here
+[    4.062057] EXT4-fs (mmcblk0p10): mounting with "discard" option, but the device does not support discard
+[    4.071724] EXT4-fs (mmcblk0p10): mounted filesystem without journal. Opts: (null)
+[    4.078734] VFS: Mounted root (ext4 filesystem) readonly on device 179:10.
+[    4.090502] devtmpfs: mounted
+[    4.090766] Freeing unused kernel memory: 180K (c07a0000 - c07cd000)
+procd: Console is alive
+[    4.258711] ** enable watchdog
+procd: - watchdog[    4.259084] ** enable watchdog
+ -
+procd: - preinit -
+e2fsck 1.42.4 (12-June-2012)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/mmcblk0p7: 1594/6016 files (0.2% non-contiguous), 16652/32768 blocks
+e2fsck 1.42.4 (12-June-2012)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/mmcblk0p10: 1605/6016 files (0.1% non-contiguous), 16759/32768 blocks
+Press the [f] key and hit [enter] to enter failsafe mode
+Press the [1], [2], [3] or [4] key and hit [enter] to select the debug level
+mounting /dev/root
+[    8.348195] EXT4-fs (mmcblk0p10): re-mounted. Opts: (null)
+procd: - early -
+procd: - watchdog -
+[    8.360465] ** enable watchdog
+procd: - ubus -
+procd: - init -
+Please press Enter to activate this console.
+[   11.526570] Loading modules backported from Linux version master-2014-05-22-0-gf2032ea
+[   11.529090] Backport generated by backports.git backports-20140320-37-g5c33da0
+[   11.547931] lib80211: common routines for IEEE802.11 drivers
+[   11.547979] lib80211_crypt: registered algorithm 'NULL'
+[   11.567027] lib80211_crypt: registered algorithm 'CCMP'
+[   11.568634] lib80211_crypt: registered algorithm 'TKIP'
+[   11.573202] lib80211_crypt: registered algorithm 'WEP'
+procd: - init complete -
+procd: 
+MSTC_R_SystemInitDone

@@ -1,8 +1,8 @@
-Welcome to our repository for documentation of hacking and rooting of the Xiaomi devices. 
+Welcome to our repository for documentation of reverse-engineering of the Xiaomi devices. 
 
 You can find the repository to root your Xiaomi Smart Home device [here](https://github.com/dgiese/dustcloud).
 
-Recording of our talk at 34C3: https://media.ccc.de/v/34c3-9147-unleash_your_smart-home_devices_vacuum_cleaning_robot_hacking
+Talks about our work: http://dontvacuum.me/talks/
 
 # Contact
 * Dennis Giese <dgi[at]posteo.de>

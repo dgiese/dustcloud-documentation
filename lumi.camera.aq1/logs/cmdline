@@ -1,0 +1,1 @@
+mem=35M console=ttyAMA0,115200 root=/dev/mtdblock3 rootfstype=squashfs mtdparts=hi_sfc:256k(boot)ro,128k(env),1792k(os),6144k(rootfs),3072k(app0),3072k(app1),1920k(conf)

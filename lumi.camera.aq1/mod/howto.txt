@@ -1,0 +1,6 @@
+mksquashfs squashfs-root/ mtdblock3new -force-uid 1000 -force-gid 1000 -comp xz
+dd if=mtdblock3cod of=dump_fixed.rom bs=1 seek=2228224 conv=notrunc
+
+1. copy file to sd card and insert into camera
+2. telnet to camera (default ip 192.168.1.1) and login with root:lumi-201 [works only for firmwares older than October 2018)
+3. #flashcp /mnt/mtdblock3dustcloud /dev/mtd3 [Warning, this might break your camera as you replace the Squashfs filesystem which is technically mounted)

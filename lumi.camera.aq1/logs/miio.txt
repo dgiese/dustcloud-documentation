@@ -1,0 +1,178 @@
+[20180101 00:47:21] [INFO] Set data dir to: /lumi/conf
+[20180101 00:47:21] [INFO] Set TCP host to "ott.io.mi.com"
+[20180101 00:47:21] [INFO] Set UDP host to "ot.io.mi.com"
+[20180101 00:47:21] [INFO] OT smart conn sockfd: 3
+[20180101 00:47:21] [INFO] OT agent listen fd: 4
+[20180101 00:47:21] [INFO] BT conn listen fd: 5
+[20180101 00:47:21] [INFO] Timer fd: 6, interval: 5000 ms
+[20180101 00:47:21] [INFO] Sync timer fd: 7, interval: 0 ms
+[20180101 00:47:21] [INFO] ACK timer fd: 8, timeout: 0 ms
+[20180101 00:47:21] [INFO] pollfds[0]: 3
+[20180101 00:47:21] [INFO] pollfds[1]: 4
+[20180101 00:47:21] [INFO] pollfds[2]: 5
+[20180101 00:47:21] [INFO] pollfds[3]: 6
+[20180101 00:47:21] [INFO] pollfds[4]: 7
+[20180101 00:47:21] [INFO] pollfds[5]: 8
+[20180101 00:47:22] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:22] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 28 bytes
+[20180101 00:47:22] [DEBUG] Got _internal.hello.
+[20180101 00:47:22] [INFO] STATE: (0)
+[20180101 00:47:22] [DEBUG] check_device_info:1261, didkeyreq_timestamp: 0, didkeyreq_interval: 30.
+[20180101 00:47:22] [DEBUG] cmd_internal_request_dinfo
+[20180101 00:47:22] [INFO] OT agent internalfd closed: 9
+[20180101 00:47:23] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:23] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 156 bytes
+[20180101 00:47:23] [DEBUG] Got _internal.response_dinfo.
+[20180101 00:47:23] [INFO] STATE: (0) -> STATE_DIDKEY_DONE
+[20180101 00:47:23] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:23] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 28 bytes
+[20180101 00:47:23] [DEBUG] Got _internal.hello.
+[20180101 00:47:23] [INFO] STATE: (3)
+[20180101 00:47:23] [DEBUG] cmd_internal_request_dtoken
+[20180101 00:47:23] [INFO] OT agent internalfd closed: 9
+[20180101 00:47:23] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:23] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 66 bytes
+[20180101 00:47:23] [DEBUG] Got _internal.response_dtoken.
+[20180101 00:47:23] [INFO] STATE: (3) -> STATE_TOKEN_DONE
+[20180101 00:47:23] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:23] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 28 bytes
+[20180101 00:47:23] [DEBUG] Got _internal.hello.
+[20180101 00:47:23] [INFO] STATE: (4)
+[20180101 00:47:23] [INFO] OT agent internalfd closed: 9
+[20180101 00:47:23] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:23] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 54 bytes
+[20180101 00:47:23] [DEBUG] Got _internal.res_wifi_conf_status.
+[20180101 00:47:23] [INFO] STATE: (4) -> STATE_WIFI_STA_MODE
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.247, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.246, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.114, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.113, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.245, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.111, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.112, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.223, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.115, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.242, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.241, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.2, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 42.62.48.225, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 124.251.57.12, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 124.251.57.11, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 124.251.57.10, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.249, port: 8053
+[20180101 00:47:23] [INFO] Add UDP server into list, host ip: 120.92.96.248, port: 8053
+[20180101 00:47:23] [INFO] Add TCP server into list, host ip: 42.62.94.185, port: 80
+[20180101 00:47:24] [INFO] Add TCP server into list, host ip: 124.243.204.138, port: 80
+[20180101 00:47:24] [INFO] Add TCP server into list, host ip: 120.92.96.87, port: 80
+[20180101 00:47:24] [INFO] Add TCP server into list, host ip: 120.92.96.88, port: 80
+[20180101 00:47:24] [INFO] Add TCP server into list, host ip: 58.83.160.14, port: 80
+[20180101 00:47:25] [INFO] Add TCP server into list, host ip: 58.83.160.36, port: 80
+[20180101 00:47:25] [INFO] Connect to server ip: 42.62.48.111, port: 8053
+[20180101 00:47:25] [INFO] OT cloud sockfd: 10
+[20180101 00:47:25] [INFO] STATE: (6) -> STATE_CLOUD_TRYING
+[20180101 00:47:25] [INFO] report_synctime
+[20180101 00:47:25] [INFO] internet connection succeed
+[20180101 00:47:25] [INFO] OT agent listen accept sockfd: 11
+[20180101 00:47:25] [INFO] OT agent listen accept sockfd: 12
+[20180101 00:47:25] [INFO] OT agent listen accept sockfd: 13
+[20180101 00:47:25] [INFO] OT agent listen accept sockfd: 14
+[20180101 00:47:25] [DEBUG] ot_agent_recv_handler_one(), fd: 11, length: 28 bytes
+[20180101 00:47:25] [DEBUG] Got _internal.hello.
+[20180101 00:47:25] [INFO] STATE: (7)
+[20180101 00:47:25] [DEBUG] Time sync msg from server
+[20180101 00:47:25] [INFO] sync time with server, server: 1530200000, local(mono): 3096653, diff: 1527100000
+[20180101 00:47:25] [INFO] OT agent internalfd closed: 11
+[20180101 00:47:25] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:25] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 241 bytes
+[20180101 00:47:25] [DEBUG] Got _internal.info.
+[20180101 00:47:25] [INFO] cmd_internal_get_info_callback
+[20180101 00:47:25] [DEBUG] ip=x.x.x.x
+[20180101 00:47:25] [INFO] report_otcinfo_flag: 0
+[20180101 00:47:25] [DEBUG] report to cloud _otc.info: {"partner_id":"","params":{"hw_ver":"Linux","fw_ver":"3.3.7_210","mcu_fw_ver":"0143","ap":{"ssid":"xxxx","bssid":"xxxx"},"netif":{"localIp":"x.x.x.x","mask":"255.255.255.0","gw":"x.x.x.x"},"model":"lumi.camera.aq1","mac":"xxxx","token":"xxxx","life":3096654},"id":1234,"method":"_otc.info"}
+[20180101 00:47:25] [DEBUG] ACK timer fd: 8, timeout: 3000 ms
+[20180101 00:47:25] [INFO] OT agent listen accept sockfd: 9
+[20180101 00:47:25] [DEBUG] ot_agent_recv_handler_one(), fd: 9, length: 28 bytes
+[20180101 00:47:25] [DEBUG] Got _internal.hello.
+[20180101 00:47:25] [INFO] STATE: (7)
+[20180101 00:47:26] [DEBUG] cloud_handle_msg, msg: {"id":1234,"result":{"otc_list":[{"ip":"120.92.96.249","port":8053},{"ip":"120.92.96.242","port":8053},{"ip":"124.251.57.2","port":8053},{"ip":"42.62.48.111","port":8053}],"otc_test":{"list":[{"ip":"42.62.48.2","port":8053},{"ip":"120.92.96.248","port":8053},{"ip":"123.125.103.75","port":8053},{"ip":"120.92.153.181","port":8053},{"ip":"220.181.138.198","port":8053}],"interval":1800, "firsttest":72}}}, strlen: 409, len: 410
+[20180101 00:47:26] [DEBUG] cloud ack: {"id":1234,"result":{"otc_list":[{"ip":"120.92.96.249","port":8053},{"ip":"120.92.96.242","port":8053},{"ip":"124.251.57.2","port":8053},{"ip":"42.62.48.111","port":8053}],"otc_test":{"list":[{"ip":"42.62.48.2","port":8053},{"ip":"120.92.96.248","port":8053},{"ip":"123.125.103.75","port":8053},{"ip":"120.92.153.181","port":8053},{"ip":"220.181.138.198","port":8053}],"interval":1800, "firsttest":72}}}, strlen: 409, len: 410
+[20180101 00:47:26] [INFO] _otc.info reported (flag: 1234) and got response.
+[20180101 00:47:26] [DEBUG] _otc.info response: {"id":1234,"result":{"otc_list":[{"ip":"120.92.96.249","port":8053},{"ip":"120.92.96.242","port":8053},{"ip":"124.251.57.2","port":8053},{"ip":"42.62.48.111","port":8053}],"otc_test":{"list":[{"ip":"42.62.48.2","port":8053},{"ip":"120.92.96.248","port":8053},{"ip":"123.125.103.75","port":8053},{"ip":"120.92.153.181","port":8053},{"ip":"220.181.138.198","port":8053}],"interval":1800, "firsttest":72}}}
+[20180101 00:47:26] [DEBUG] data desc acked(-) id: 1234
+[20180101 00:47:26] [INFO] Add server into list, host ip: 120.92.96.249, port: 8053
+[20180101 00:47:26] [INFO] Add server into list, host ip: 120.92.96.242, port: 8053
+[20180101 00:47:26] [INFO] Add server into list, host ip: 124.251.57.2, port: 8053
+[20180101 00:47:26] [INFO] Add server into list, host ip: 42.62.48.111, port: 8053
+[20180101 00:47:26] [INFO] STATE: (7) -> STATE_CLOUD_CONNECTED
+[20180101 00:47:26] [DEBUG] Set _otc.info sync_interval: 1800000
+[20180101 00:47:26] [DEBUG] Start keep alive interval: 20000
+[20180101 00:47:26] [INFO] report_ota_state_idle: {"id":1467678483,"method":"props","params":{"ota_state":"idle"}}
+[20180101 00:47:26] [INFO] no bind_key to report
+[20180101 00:47:26] [DEBUG] callback_queue_issue() id: 1332130981, ret: 0
+[20180101 00:47:26] [DEBUG] ot_agent_recv_handler_one(), fd: 12, length: 72 bytes
+[20180101 00:47:26] [WARNING] json_verify: Not in json format: {"id":5111,"method":"_otc.log","params":{"gw_info":{"z_ch":11,"w_ch":}}}
+[20180101 00:47:26] [WARNING] ot_agent_recv_handler_one() return -1
+[20180101 00:47:26] [DEBUG] ot_agent_recv_handler_one(), fd: 13, length: 52 bytes
+[20180101 00:47:25] [DEBUG] ot_agent_recv_handler_one(), fd: 14, length: 59 bytes
+[20180101 00:47:25] [DEBUG] cloud_handle_msg, msg: {"id":1467678483,"result":"ok"}, strlen: 31, len: 32
+[20180101 00:47:25] [DEBUG] cloud ack: {"id":1467678483,"result":"ok"}, strlen: 31, len: 32
+[20180101 00:47:25] [INFO] report_ota_state_idle_callback: {"id":1467678483,"result":"ok"}
+[20180101 00:47:25] [DEBUG] data desc acked(-) id: 1467678483
+[20180101 00:47:25] [DEBUG] callback_queue_issue() id: 1467678483, ret: 0
+[20180101 00:47:25] [DEBUG] cloud_handle_msg, msg: {"id":10004,"result":"ok"}, strlen: 26, len: 27
+[20180101 00:47:25] [DEBUG] cloud ack: {"id":10004,"result":"ok"}, strlen: 26, len: 27
+[20180101 00:47:25] [DEBUG] report_msg_general_callback(), fd: 14, msg: {"id":10004,"result":"ok"}
+[20180101 00:47:25] [DEBUG] data desc acked(-) id: 10004
+[20180101 00:47:25] [DEBUG] ot_agent_send_ack_sock, fd: 14, msg: {"id":10004,"result":"ok"}.
+[20180101 00:47:25] [DEBUG] callback_queue_issue() id: 10004, ret: 0
+[20180101 00:47:26] [INFO] OT protocol diagrams come...
+[20180101 00:47:26] [INFO] Fill my DID
+[20180101 00:47:26] [INFO] Fill my TIMESTAMP
+[20180101 00:47:26] [INFO] OT protocol diagrams come...
+[20180101 00:47:26] [DEBUG] handle_mobile_msg, msg: {"id":8843,"method":"get_arming","params":[]}, strlen: 45, len: 45
+[20180101 00:47:26] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_arming","params":[],"id":2011060920}, strlen: 51
+[20180101 00:47:26] [DEBUG] cloud/mobile cmd: {"method":"get_arming","params":[],"id":2011060920}, strlen: 51, len: 51
+[20180101 00:47:26] [DEBUG] ot_agent_recv_handler_one(), fd: 12, length: 34 bytes
+[20180101 00:47:26] [DEBUG] mobile_msg_callback, send back to mobile: {"result":["off"],"id":8843}
+[20180101 00:47:26] [DEBUG] callback_queue_issue() id: 2011060920, to: mobile
+[20180101 00:47:26] [INFO] OT protocol diagrams come...
+[20180101 00:47:26] [DEBUG] handle_mobile_msg, msg: {"id":8844,"method":"get_arm_wait_time","params":[]}, strlen: 52, len: 52
+[20180101 00:47:26] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_arm_wait_time","params":[],"id":1811026573}, strlen: 58
+[20180101 00:47:26] [DEBUG] cloud/mobile cmd: {"method":"get_arm_wait_time","params":[],"id":1811026573}, strlen: 58, len: 58
+[20180101 00:47:26] [DEBUG] ot_agent_recv_handler_one(), fd: 12, length: 30 bytes
+[20180101 00:47:26] [DEBUG] mobile_msg_callback, send back to mobile: {"result":[0],"id":8844}
+[20180101 00:47:26] [DEBUG] callback_queue_issue() id: 1811026573, to: mobile
+[20180101 00:47:26] [INFO] OT protocol diagrams come...
+[20180101 00:47:26] [DEBUG] handle_mobile_msg, msg: {"id":65005,"method":"get_ipcprop","params":["video_state"]}, strlen: 60, len: 60
+[20180101 00:47:26] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_ipcprop","params":["video_state"],"id":524256871}, strlen: 64
+[20180101 00:47:26] [DEBUG] cloud/mobile cmd: {"method":"get_ipcprop","params":["video_state"],"id":524256871}, strlen: 64, len: 64
+[20180101 00:47:26] [DEBUG] ot_agent_recv_handler_one(), fd: 13, length: 32 bytes
+[20180101 00:47:26] [DEBUG] mobile_msg_callback, send back to mobile: {"result":["on"],"id":65005}
+[20180101 00:47:26] [DEBUG] callback_queue_issue() id: 524256871, to: mobile
+[20180101 00:47:38] [INFO] OT protocol diagrams come...
+[20180101 00:47:38] [INFO] Fill my DID
+[20180101 00:47:38] [INFO] Fill my TIMESTAMP
+[20180101 00:47:38] [INFO] OT protocol diagrams come...
+[20180101 00:47:38] [DEBUG] handle_mobile_msg, msg: {"id":2345,"method":"get_ipcprop","params":["all"]}, strlen: 52, len: 52
+[20180101 00:47:38] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_ipcprop","params":["all"],"id":746762}, strlen: 57
+[20180101 00:47:38] [DEBUG] cloud/mobile cmd: {"method":"get_ipcprop","params":["all"],"id":746762}, strlen: 57, len: 57
+[20180101 00:47:38] [DEBUG] ot_agent_recv_handler_one(), fd: 13, length: 223 bytes
+[20180101 00:47:38] [DEBUG] mobile_msg_callback, send back to mobile: {"p2p_id":"xxxx","app_type":"celing","offset_x":"0","offset_y":"0","offset_radius":"0","md_status":0,"video_state":1,"fullstop":0,"flip_state":0,"avID":"xxxx","avPass":"xxx","id":2345}
+[20180101 00:47:38] [DEBUG] callback_queue_issue() id: 746762, to: mobile
+[20180101 00:47:40] [INFO] OT protocol diagrams come...
+[20180101 00:47:40] [DEBUG] handle_mobile_msg, msg: {"id":8845,"method":"get_arming","params":[]}, strlen: 45, len: 45
+[20180101 00:47:40] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_arming","params":[],"id":4336342}, strlen: 51
+[20180101 00:47:40] [DEBUG] cloud/mobile cmd: {"method":"get_arming","params":[],"id":4336342}, strlen: 51, len: 51
+[20180101 00:47:40] [DEBUG] ot_agent_recv_handler_one(), fd: 12, length: 34 bytes
+[20180101 00:47:40] [DEBUG] mobile_msg_callback, send back to mobile: {"result":["off"],"id":8845}
+[20180101 00:47:40] [DEBUG] callback_queue_issue() id: 4336342, to: mobile
+[20180101 00:47:40] [INFO] OT protocol diagrams come...
+[20180101 00:47:40] [DEBUG] handle_mobile_msg, msg: {"id":8846,"method":"get_arm_wait_time","params":[]}, strlen: 52, len: 52
+[20180101 00:47:40] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_arm_wait_time","params":[],"id":1179108157}, strlen: 58
+[20180101 00:47:40] [DEBUG] cloud/mobile cmd: {"method":"get_arm_wait_time","params":[],"id":1179108157}, strlen: 58, len: 58
+[20180101 00:47:40] [DEBUG] ot_agent_recv_handler_one(), fd: 12, length: 30 bytes
+[20180101 00:47:40] [DEBUG] mobile_msg_callback, send back to mobile: {"result":[0],"id":8846}
+[20180101 00:47:40] [DEBUG] callback_queue_issue() id: 1179108157, to: mobile
+[20180101 00:47:46] [INFO] OT protocol diagrams come...
+[20180101 00:47:46] [INFO] Fill my DID
+[20180101 00:47:46] [INFO] Fill my TIMESTAMP

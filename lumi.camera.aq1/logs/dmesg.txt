@@ -1,0 +1,226 @@
+Booting Linux on physical CPU 0
+Linux version 3.4.35 (woo@simon) (gcc version 4.8.3 20131202 (prerelease) (Hisilicon_v300) ) #1 Mon Jun 12 09:47:08 CST 2017
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: hi3518ev200
+Memory policy: ECC disabled, Data cache writeback
+On node 0 totalpages: 8960
+free_area_init_node: node 0, pgdat c04b7ac8, node_mem_map c04f7000
+  Normal zone: 70 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 8890 pages, LIFO batch:1
+pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8890
+Kernel command line: mem=35M console=ttyAMA0,115200 root=/dev/mtdblock3 rootfstype=squashfs mtdparts=hi_sfc:256k(boot)ro,128k(env),1792k(os),6144k(rootfs),3072k(app0),3072k(app1),1920k(conf)
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 35MB = 35MB total
+Memory: 30372k/30372k available, 5468k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xc2800000 - 0xff000000   ( 968 MB)
+    lowmem  : 0xc0000000 - 0xc2300000   (  35 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc046a000   (4488 kB)
+      .init : 0xc046a000 - 0xc048ac4c   ( 132 kB)
+      .data : 0xc048c000 - 0xc04b81e0   ( 177 kB)
+       .bss : 0xc04b8204 - 0xc04f6898   ( 250 kB)
+SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:32
+VIC @fe0d0000: id 0x00641190, vendor 0x41
+sched_clock: 32 bits at 49MHz, resolution 20ns, wraps every 86767ms
+Console: colour dummy device 80x30
+Calibrating delay loop... 269.10 BogoMIPS (lpj=1345536)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+Initializing cgroup subsys freezer
+CPU: Testing write buffer coherency: ok
+Setting up static identity map for 0x80360f68 - 0x80360fc0
+dummy: 
+NET: Registered protocol family 16
+Serial: AMBA PL011 UART driver
+uart:0: ttyAMA0 at MMIO 0x20080000 (irq = 5) is a PL011 rev2
+console [ttyAMA0] enabled
+uart:1: ttyAMA1 at MMIO 0x20090000 (irq = 30) is a PL011 rev2
+uart:2: ttyAMA2 at MMIO 0x200a0000 (irq = 25) is a PL011 rev2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+hi-spi-master hi-spi-master.0: with 1 chip select slaves attached
+hi-spi-master hi-spi-master.1: with 2 chip select slaves attached
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switching to clocksource timer0
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP: reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NFS: Registering the id_resolver key type
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.18)
+yaffs: yaffs built Jun 12 2017 09:44:37 Installing.
+msgmni has been set to 59
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+io scheduler noop registered
+io scheduler deadline registered (default)
+io scheduler cfq registered
+brd: module loaded
+Check Flash Memory Controller v100 ...  Found.
+SPI Nor(cs 0) ID: 0xc8 0x40 0x18
+Block:64KB Chip:16MB Name:"GD25Q128"
+SPI Nor total size: 16MB
+7 cmdlinepart partitions found on MTD device hi_sfc
+7 cmdlinepart partitions found on MTD device hi_sfc
+Creating 7 MTD partitions on "hi_sfc":
+0x000000000000-0x000000040000 : "boot"
+0x000000040000-0x000000060000 : "env"
+0x000000060000-0x000000220000 : "os"
+0x000000220000-0x000000820000 : "rootfs"
+0x000000820000-0x000000b20000 : "app0"
+0x000000b20000-0x000000e20000 : "app1"
+0x000000e20000-0x000001000000 : "conf"
+SPI Nand ID Table Version 1.9
+No NAND device found
+himii: probed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+hiusb-ehci hiusb-ehci.0: HIUSB EHCI
+hiusb-ehci hiusb-ehci.0: new USB bus registered, assigned bus number 1
+hiusb-ehci hiusb-ehci.0: irq 15, io mem 0x100b0000
+hiusb-ehci hiusb-ehci.0: USB 0.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+hiusb-ohci hiusb-ohci.0: HIUSB OHCI
+hiusb-ohci hiusb-ohci.0: new USB bus registered, assigned bus number 2
+hiusb-ohci hiusb-ohci.0: irq 16, io mem 0x100a0000
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+mousedev: PS/2 mouse device common for all mice
+i2c /dev entries driver
+hisi_i2c hisi_i2c.0: Hisilicon [i2c-0] probed!
+hisi_i2c hisi_i2c.1: Hisilicon [i2c-1] probed!
+hisi_i2c hisi_i2c.2: Hisilicon [i2c-2] probed!
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+TCP: cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+lib80211: common routines for IEEE802.11 drivers
+lib80211_crypt: registered algorithm 'NULL'
+Registering the dns_resolver key type
+VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+Freeing init memory: 128K
+usb 1-1: new high-speed USB device number 2 using hiusb-ehci
+Hisilicon Media Memory Zone Manager
+Module himedia: init ok
+hi3518e_base: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+load sys.ko for Hi3518EV200...OK!
+load tde.ko ...OK!
+load region.ko ....OK!
+ISP Mod init!
+load viu.ko for Hi3518EV200...OK!
+load vpss.ko ....OK!
+load rc.ko for Hi3518EV200...OK!
+load venc.ko for Hi3518EV200...OK!
+load chnl.ko for Hi3518EV200...OK!
+load h264e.ko for Hi3518EV200...OK!
+load jpege.ko for Hi3518EV200...OK!
+load ive.ko for Hi3518EV200...OK!
+===kernel=== gpio driver init finished!
+===kernel=== adc device init finished!
+register device success !
+Hisilicon Watchdog Timer: 0.01 initialized. default_margin=125 sec (nowayout= 1, nodeamon= 0)
+exFAT: Version 1.2.9
+acodec inited!
+mipi_init
+init phy power successful!
+load hi_mipi driver successful!
+rtusb init rt2870 --->
+UBIA_NETLINK [sk=c1947600]initialed ok!
+
+
+=== pAd = c2cbc000, size = 857392 ===
+
+<-- RTMPAllocTxRxRingMemory, Status=0
+<-- RTMPAllocAdapterBlock, Status=0
+RTMP_COM_IoctlHandle():pAd->BulkOutEpAddr=0x8
+RTMP_COM_IoctlHandle():pAd->BulkOutEpAddr=0x4
+RTMP_COM_IoctlHandle():pAd->BulkOutEpAddr=0x5
+RTMP_COM_IoctlHandle():pAd->BulkOutEpAddr=0x6
+RTMP_COM_IoctlHandle():pAd->BulkOutEpAddr=0x7
+RTMP_COM_IoctlHandle():pAd->BulkOutEpAddr=0x9
+NVM is EFUSE
+Endpoint(8) is for In-band Command
+Endpoint(4) is for WMM0 AC0
+Endpoint(5) is for WMM0 AC1
+Endpoint(6) is for WMM0 AC2
+Endpoint(7) is for WMM0 AC3
+Endpoint(9) is for WMM1 AC0
+Endpoint(84) is for Data-In
+Endpoint(85) is for Command Rsp
+usbcore: registered new interface driver rt2870
+FW Version:0.1.00 Build:7640
+Build Time:201301040941____
+ILM Length = 44276(bytes)
+DLM Length = 0(bytes)
+Loading FW....
+#
+RTMP_TimerListAdd: add timer obj c2d39ae4!
+RTMP_TimerListAdd: add timer obj c2d39b14!
+RTMP_TimerListAdd: add timer obj c2d39b44!
+RTMP_TimerListAdd: add timer obj c2d39ab4!
+RTMP_TimerListAdd: add timer obj c2d39a24!
+RTMP_TimerListAdd: add timer obj c2d39a54!
+RTMP_TimerListAdd: add timer obj c2cce85c!
+RTMP_TimerListAdd: add timer obj c2cbe020!
+RTMP_TimerListAdd: add timer obj c2cbe054!
+RTMP_TimerListAdd: add timer obj c2cce8fc!
+RTMP_TimerListAdd: add timer obj c2cce7fc!
+RTMP_TimerListAdd: add timer obj c2cce8cc!
+cfg_mode=5
+RT_CfgSetWirelessMode(): Invalid wireless mode(5, wmode=0x1f), ChipCap(2.4G)
+Key1Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+1. Phy Mode = 6
+2. Phy Mode = 6
+NVM is Efuse and its size =1d[1e0-1fc] 
+ERROR!!! MT7601 E2PROM: WRONG VERSION 0xc, should be 9
+3. Phy Mode = 6
+AntCfgInit: primary/secondary ant 0/1
+---> InitFrequencyCalibration
+InitFrequencyCalibrationMode:Unknow mode = 3
+InitFrequencyCalibration: frequency offset in the EEPROM = 77(0x4d)
+<--- InitFrequencyCalibration
+RTMPSetPhyMode: channel is out of range, use first channel=1 
+MCS Set = 00 00 00 00 00
+<==== rt28xx_init, Status=0
+0x1300 = 00073200
+RTMPDrvOpen(1):Check if PDMA is idle!
+RTMPDrvOpen(2):Check if PDMA is idle!
+ERROR!!! MlmeEnqueueForRecv: un-recongnized mgmt->subtype=15
+==>rt_ioctl_siwfreq::SIOCSIWFREQ(Channel=6)
+PeerBeaconAtJoinAction(): Set CentralChannel=6
+PeerAssocReqSanity - IE_EXT_CAPABILITY!
+SYNC - AP changed B/G protection to 1

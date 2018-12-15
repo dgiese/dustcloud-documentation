@@ -1,0 +1,12 @@
+Processor	: ARM926EJ-S rev 5 (v5l)
+BogoMIPS	: 269.10
+Features	: swp half thumb fastmult edsp java 
+CPU implementer	: 0x41
+CPU architecture: 5TEJ
+CPU variant	: 0x0
+CPU part	: 0x926
+CPU revision	: 5
+
+Hardware	: hi3518ev200
+Revision	: 0000
+Serial		: 0000000000000000

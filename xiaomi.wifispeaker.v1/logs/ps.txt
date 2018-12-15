@@ -1,0 +1,73 @@
+
+root@OpenWrt:~# ps w
+  PID USER       VSZ STAT COMMAND
+    1 root      2336 S    /sbin/procd
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    5 root         0 SW<  [kworker/0:0H]
+    7 root         0 RW   [rcu_preempt]
+    8 root         0 SW   [rcu_bh]
+    9 root         0 SW   [rcu_sched]
+   10 root         0 SW<  [khelper]
+   11 root         0 SW   [kdevtmpfs]
+   12 root         0 SW   [kworker/u2:1]
+   16 root         0 SW<  [suspend]
+  319 root         0 SW<  [writeback]
+  321 root         0 SW<  [bioset]
+  323 root         0 SW<  [kblockd]
+  331 root         0 SW   [khubd]
+  350 root         0 SW<  [cfg80211]
+  436 root         0 SW<  [rpciod]
+  443 root         0 RW   [kswapd0]
+  490 root         0 SW   [fsnotify_mark]
+  507 root         0 SW<  [nfsiod]
+  517 root         0 SW<  [crypto]
+ 1082 root         0 SW<  [kpsmoused]
+ 1132 root         0 SW   [irq/28-sdio]
+ 1139 root         0 RW   [mmcqd/0]
+ 1140 root         0 SW   [mmcqd/0boot0]
+ 1141 root         0 SW   [mmcqd/0boot1]
+ 1150 root         0 SW<  [rtc]
+ 1185 root         0 SW   [kworker/u2:3]
+ 1216 root         0 SW<  [deferwq]
+ 1221 root         0 SW<  [kworker/0:1H]
+ 1222 root         0 SW<  [ext4-dio-unwrit]
+ 2082 root      1644 S    /sbin/ubusd
+ 2083 root      1636 S    /sbin/askfirst ttyS0 /bin/ash --login
+ 2084 root      1636 S    /sbin/askfirst tty1 /bin/ash --login
+ 2141 root         0 SW<  [cifsiod]
+ 2374 root      1872 S    /sbin/logd -S 16
+ 2432 root         0 SW   [jbd2/mmcblk0p11]
+ 2434 root         0 SW<  [ext4-dio-unwrit]
+ 2560 root         0 SW   [jbd2/mmcblk0p12]
+ 2562 root         0 SW<  [ext4-dio-unwrit]
+ 2622 root      2120 S    /sbin/netifd
+ 2697 root      1972 S    /usr/sbin/dropbear -F -P /var/run/dropbear.1.pid -p 22 -K 300
+ 2767 root      2204 S    /usr/sbin/dbus-daemon --system
+ 2779 nobody    2528 S    avahi-daemon: running [OpenWrt.local]
+ 2802 root     13328 S    /usr/bin/netmonitor
+ 2879 nobody   69516 S    /usr/sbin/pdnsd -c /etc/pdnsd.conf --daemon -p /var/run/pdnsd.pid
+ 2912 root      2596 S    /usr/bin/umi_watch
+ 3011 root      4912 S    /usr/sbin/nmbd -D -s /var/etc/smb.conf
+ 3034 root      5080 S    /usr/sbin/smbd -D -s /var/etc/smb.conf
+ 3275 root         0 SW   [wl_event_handle]
+ 3278 root         0 SW   [dhd_watchdog_th]
+ 3279 root         0 SW   [dhd_dpc]
+ 3280 root         0 SW   [dhd_rxf]
+ 3296 root         0 SW   [jbd2/mmcblk0p3-]
+ 3297 root         0 SW<  [ext4-dio-unwrit]
+ 3311 root         0 SW   [kworker/0:2]
+ 3501 root      2564 S    /usr/bin/miio_client -D -l 0
+ 3502 root      2596 S    {miio_client_hel} /bin/sh /usr/bin/miio_client_helper.sh
+14381 root      2048 S    /usr/sbin/dropbear -F -P /var/run/dropbear.1.pid -p 22 -K 300
+14422 root      2676 S    -ash
+21808 root         0 SW   [kworker/0:0]
+23223 root      2700 S    /usr/sbin/wpa_supplicant -B -Dnl80211 -iwlan0 -c/data/etc/wifi/wpa_supplicant.conf
+23244 root      728m S    /usr/bin/umi
+23252 root      2132 S    /usr/bin/miio_recv_line
+23502 root     71912 S    /usr/bin/bsa_server -d /dev/ttyS1 -lpm -p /etc/bt/bcmdhd_37M.hcd -u /data/etc/bt/ -all=0
+23539 root      2596 S    udhcpc -b -R -i wlan0 -x hostname mi-wifispeaker8189
+23546 root      2752 S    /usr/sbin/ntpd -n -p cn.pool.ntp.org -p 0.openwrt.pool.ntp.org -p 1.openwrt.pool.ntp.org -p 2.openwrt.poo
+23624 root      2048 R    /usr/sbin/dropbear -F -P /var/run/dropbear.1.pid -p 22 -K 300
+23626 root      2676 S    -ash
+23637 root      3596 R    ps w

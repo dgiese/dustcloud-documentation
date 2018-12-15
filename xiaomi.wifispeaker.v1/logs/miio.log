@@ -1,0 +1,286 @@
+[20180101 08:13:31] [INFO] Set TCP host to "ott.io.mi.com"
+[20180101 08:13:31] [INFO] Set UDP host to "ot.io.mi.com"
+[20180101 08:13:31] [INFO] OT smart conn sockfd: 3
+[20180101 08:13:31] [INFO] OT agent listen fd: 4
+[20180101 08:13:31] [INFO] BT conn listen fd: 5
+[20180101 08:13:31] [INFO] Timer fd: 6, interval: 5000 ms
+[20180101 08:13:31] [INFO] Sync timer fd: 7, interval: 0 ms
+[20180101 08:13:31] [INFO] ACK timer fd: 8, timeout: 0 ms
+[20180101 08:13:31] [INFO] pollfds[0]: 3
+[20180101 08:13:31] [INFO] pollfds[1]: 4
+[20180101 08:13:31] [INFO] pollfds[2]: 5
+[20180101 08:13:31] [INFO] pollfds[3]: 6
+[20180101 08:13:31] [INFO] pollfds[4]: 7
+[20180101 08:13:31] [INFO] pollfds[5]: 8
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 35 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.helper_ready.
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 28 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.hello.
+[20180101 08:13:31] [INFO] STATE: (0)
+[20180101 08:13:31] [DEBUG] check_device_info:1268, didkeyreq_timestamp: 0, didkeyreq_interval: 30.
+[20180101 08:13:31] [DEBUG] cmd_internal_request_dinfo
+[20180101 08:13:31] [INFO] OT agent internalfd closed: 11
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 167 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.response_dinfo.
+[20180101 08:13:31] [INFO] STATE: (0) -> STATE_DIDKEY_DONE
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 28 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.hello.
+[20180101 08:13:31] [INFO] STATE: (3)
+[20180101 08:13:31] [DEBUG] cmd_internal_request_dtoken
+[20180101 08:13:31] [INFO] OT agent internalfd closed: 11
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 66 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.response_dtoken.
+[20180101 08:13:31] [INFO] STATE: (3) -> STATE_TOKEN_DONE
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 52 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.response_dcountry.
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 28 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.hello.
+[20180101 08:13:31] [INFO] STATE: (4)
+[20180101 08:13:31] [INFO] OT agent internalfd closed: 11
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 11, length: 54 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.res_wifi_conf_status.
+[20180101 08:13:31] [INFO] STATE: (4) -> STATE_WIFI_STA_MODE
+[20180101 08:13:31] [INFO] getaddrinfo (ot.io.mi.com:8053): Name or service not known
+[20180101 08:13:31] [INFO] getaddrinfo (ott.io.mi.com:80): Name or service not known
+[20180101 08:13:31] [WARNING] no server detected.
+[20180101 08:13:31] [WARNING] internet connection failed
+[20180101 08:13:31] [INFO] OT agent listen accept sockfd: 12
+[20180101 08:13:31] [WARNING] POLLNVAL | POLLHUP | POLLERR fd: pollfds[6]: 11, revents: 0x00000019
+[20180101 08:13:31] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:31] [DEBUG]  fd: 12, length: 28 bytes
+[20180101 08:13:31] [DEBUG] Got _internal.hello.
+[20180101 08:13:31] [INFO] STATE: (6)
+[20180101 08:13:36] [INFO] getaddrinfo (ot.io.mi.com:8053): Name or service not known
+[20180101 08:13:36] [INFO] getaddrinfo (ott.io.mi.com:80): Name or service not known
+[20180101 08:13:36] [WARNING] no server detected.
+[20180101 08:13:36] [WARNING] internet connection failed
+[20180101 08:13:36] [ERROR] miio_util.c,general_send_one: send error: No such file or directory
+[20180101 08:13:40] [INFO] OT agent listen accept sockfd: 11
+[20180101 08:13:40] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:40] [DEBUG]  fd: 11, length: 85 bytes
+[20180101 08:13:40] [WARNING] cloud socket not ready yet ... 
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 124.251.57.10, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 124.251.57.11, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 124.251.57.12, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.225, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.2, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.241, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.242, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.115, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.223, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.224, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.112, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.111, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.245, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.113, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 42.62.48.114, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.246, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.247, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.248, port: 8053
+[20180101 08:13:41] [INFO] Add UDP server into list, host ip: 120.92.96.249, port: 8053
+[20180101 08:13:41] [WARNING] error in trying to connect socket: No such file or directory
+[20180101 08:13:41] [INFO] Connect to server ip: 124.251.57.11, port: 8053
+[20180101 08:13:41] [INFO] OT cloud sockfd: 13
+[20180101 08:13:41] [INFO] STATE: (6) -> STATE_CLOUD_TRYING
+[20180101 08:13:41] [INFO] report_synctime
+[20180101 08:13:41] [INFO] internet connection succeed
+[20180101 08:13:46] [INFO] report_synctime
+[20180101 08:13:46] [DEBUG] Time sync msg from server
+[20180101 08:13:46] [INFO] sync time with server, server: 15219000000, local(mono): 37, diff: 152100000
+[20180101 08:13:46] [INFO] OT agent internalfd closed: 12
+[20180101 08:13:46] [INFO] OT agent listen accept sockfd: 12
+[20180101 08:13:46] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:46] [DEBUG]  fd: 12, length: 232 bytes
+[20180101 08:13:46] [DEBUG] Got _internal.info.
+[20180101 08:13:46] [INFO] cmd_internal_get_info_callback
+[20180101 08:13:46] [DEBUG] ip=x.x.x.x
+[20180101 08:13:46] [INFO] report_otcinfo_flag: 0
+[20180101 08:13:46] [DEBUG] report to cloud _otc.info: {"partner_id":"","params":{"hw_ver":"Linux","fw_ver":"unknown","ap":{"ssid":"myssid","rssi":"-65","bssid":"xx:xx:xx:xx:xx:xx"},"netif":{"localIp":"x.x.x.x","mask":"255.255.255.0","gw":"x.x.x.x"},"model":"xiaomi.wifispeaker.v1","mac":"xx:xx:xx:xx:xx:xx","token":"xxx","life":38},"id":324076252,"method":"_otc.info"}
+[20180101 08:13:46] [DEBUG] ACK timer fd: 8, timeout: 3000 ms
+[20180101 08:13:46] [INFO] OT agent listen accept sockfd: 12
+[20180101 08:13:46] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:46] [DEBUG]  fd: 12, length: 28 bytes
+[20180101 08:13:46] [DEBUG] Got _internal.hello.
+[20180101 08:13:46] [INFO] STATE: (7)
+[20180101 08:13:47] [INFO] cloud_handle_msg
+[20180101 08:13:47] [DEBUG] msg: {"id":324076252,"result":{"otc_list":[{"ip":"42.62.48.114","port":8053},{"ip":"42.62.48.113","port":8053},{"ip":"42.62.48.224","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.96.248","port":8053},{"ip":"123.125.103.86","port":8053},{"ip":"27.109.124.92","port":8053},{"ip":"220.181.138.198","port":8053}],"interval":1800, "firsttest":169}}}, strlen: 362, len: 363
+[20180101 08:13:47] [DEBUG] cloud ack: {"id":324076252,"result":{"otc_list":[{"ip":"42.62.48.114","port":8053},{"ip":"42.62.48.113","port":8053},{"ip":"42.62.48.224","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.96.248","port":8053},{"ip":"123.125.103.86","port":8053},{"ip":"27.109.124.92","port":8053},{"ip":"220.181.138.198","port":8053}],"interval":1800, "firsttest":169}}}, strlen: 362, len: 363
+[20180101 08:13:47] [INFO] _otc.info reported (flag: 324076252) and got response.
+[20180101 08:13:47] [DEBUG] _otc.info response: {"id":324076252,"result":{"otc_list":[{"ip":"42.62.48.114","port":8053},{"ip":"42.62.48.113","port":8053},{"ip":"42.62.48.224","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.96.248","port":8053},{"ip":"123.125.103.86","port":8053},{"ip":"27.109.124.92","port":8053},{"ip":"220.181.138.198","port":8053}],"interval":1800, "firsttest":169}}}
+[20180101 08:13:47] [DEBUG] data desc acked(-) id: 324076252
+[20180101 08:13:47] [DEBUG] Add server into list, host ip: 42.62.48.114, port: 8053
+[20180101 08:13:47] [DEBUG] Add server into list, host ip: 42.62.48.113, port: 8053
+[20180101 08:13:47] [DEBUG] Add server into list, host ip: 42.62.48.224, port: 8053
+[20180101 08:13:47] [INFO] STATE: (7) -> STATE_CLOUD_CONNECTED
+[20180101 08:13:47] [DEBUG] Set _otc.info sync_interval: 1800000
+[20180101 08:13:47] [DEBUG] Start keep alive interval: 20000
+[20180101 08:13:47] [INFO] report_ota_state_idle
+[20180101 08:13:47] [DEBUG] no bind_key to report
+[20180101 08:13:47] [DEBUG] callback_queue_issue() id: 324076252, ret: 0
+[20180101 08:13:47] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:47] [DEBUG]  fd: 11, length: 170 bytes
+[20180101 08:13:47] [INFO] cloud_handle_msg
+[20180101 08:13:47] [DEBUG] msg: {"id":652262822,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:13:47] [DEBUG] cloud ack: {"id":652262822,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:13:47] [INFO] report_ota_state_idle_callback: {"id":652262822,"result":"ok"}
+[20180101 08:13:47] [DEBUG] data desc acked(-) id: 652262822
+[20180101 08:13:47] [DEBUG] callback_queue_issue() id: 652262822, ret: 0
+[20180101 08:13:47] [INFO] cloud_handle_msg
+[20180101 08:13:47] [DEBUG] msg: {"id":343265282,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342180"}}}, strlen: 153, len: 155
+[20180101 08:13:47] [DEBUG] cloud ack: {"id":343265282,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342180"}}}, strlen: 153, len: 155
+[20180101 08:13:47] [INFO] report_msg_general_callback
+[20180101 08:13:47] [DEBUG] fd: 11, msg: {"id":343265282,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342180"}}}
+[20180101 08:13:47] [DEBUG] data desc acked(-) id: 343265282
+[20180101 08:13:47] [INFO] ot_agent_send_ack_sock
+[20180101 08:13:47] [DEBUG] fd: 11, msg: {"id":343265282,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342180"}}}.
+[20180101 08:13:47] [DEBUG] callback_queue_issue() id: 343265282, ret: 0
+[20180101 08:13:47] [INFO] cloud_handle_msg
+[20180101 08:13:47] [DEBUG] msg: {"id":343265283,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342189"}}}, strlen: 153, len: 155
+[20180101 08:13:47] [DEBUG] cloud ack: {"id":343265283,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342189"}}}, strlen: 153, len: 155
+[20180101 08:13:47] [INFO] report_msg_general_callback
+[20180101 08:13:47] [DEBUG] fd: 11, msg: {"id":343265283,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342189"}}}
+[20180101 08:13:47] [DEBUG] data desc acked(-) id: 343265283
+[20180101 08:13:47] [INFO] ot_agent_send_ack_sock
+[20180101 08:13:47] [DEBUG] fd: 11, msg: {"id":343265283,"result":{"sessionid":"1234"","token":"xxx","expire":432000,"user_ctx":{"device_list_key":"2131242342189"}}}.
+[20180101 08:13:47] [DEBUG] callback_queue_issue() id: 343265283, ret: 0
+[20180101 08:13:47] [INFO] ot_agent_recv_handler_one
+[20180101 08:13:47] [DEBUG]  fd: 11, length: 30 bytes
+[20180101 08:13:47] [INFO] callback_queue_issue() id: 343265283, to: cloud
+[20180101 08:13:49] [INFO] OT protocol diagrams come...
+[20180101 08:13:49] [INFO] Fill my DID
+[20180101 08:13:49] [INFO] Fill my TIMESTAMP
+[20180101 08:13:50] [INFO] OT protocol diagrams come...
+[20180101 08:13:50] [INFO] Fill my DID
+[20180101 08:13:50] [INFO] Fill my TIMESTAMP
+[20180101 08:14:51] [INFO] OT protocol diagrams come...
+[20180101 08:14:51] [INFO] Fill my DID
+[20180101 08:14:51] [INFO] Fill my TIMESTAMP
+[20180101 08:14:51] [INFO] OT protocol diagrams come...
+[20180101 08:14:51] [INFO] Fill my DID
+[20180101 08:14:51] [INFO] Fill my TIMESTAMP
+[20180101 08:14:51] [INFO] OT protocol diagrams come...
+[20180101 08:14:51] [INFO] handle_mobile_msg
+[20180101 08:14:51] [DEBUG]  msg: {"id":9665,"method":"get_prop","params":["umi"]}, strlen: 48, len: 48
+[20180101 08:14:51] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_prop","params":["umi"],"id":838045626}, strlen: 53
+[20180101 08:14:51] [DEBUG] cloud/mobile cmd: {"method":"get_prop","params":["umi"],"id":838045626}, strlen: 53, len: 53
+[20180101 08:14:51] [INFO] ot_agent_recv_handler_one
+[20180101 08:14:51] [DEBUG]  fd: 11, length: 331 bytes
+[20180101 08:14:51] [DEBUG] mobile_msg_callback, send back to mobile: {"result":["{ \"DeviceName\": \"小米互联网音箱(123456789)\", \"channel_title\": \"\", \"current_state\": \"STOPPED\", \"hardware_version\": \"S602\", \"play_mode\": \"REPEAT_ALL\", \"track_artist\": \"\", \"track_duration\": \"00:00:00\", \"track_title\": \"\", \"transport_channel\": \"INTERNAL\" }"],"id":9665}
+[20180101 08:14:51] [INFO] callback_queue_issue() id: 838045626, to: mobile
+[20180101 08:15:48] [INFO] OT protocol diagrams come...
+[20180101 08:15:48] [INFO] Fill my DID
+[20180101 08:15:48] [INFO] Fill my TIMESTAMP
+[20180101 08:15:48] [INFO] OT protocol diagrams come...
+[20180101 08:15:48] [INFO] handle_mobile_msg
+[20180101 08:15:48] [DEBUG]  msg: {"id":9666,"method":"next_channel","params":[]}, strlen: 47, len: 47
+[20180101 08:15:48] [DEBUG] handle_mobile_msg, newmsg: {"method":"next_channel","params":[],"id":17397092}, strlen: 51
+[20180101 08:15:48] [DEBUG] cloud/mobile cmd: {"method":"next_channel","params":[],"id":17397092}, strlen: 51, len: 51
+[20180101 08:15:48] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:48] [DEBUG]  fd: 11, length: 29 bytes
+[20180101 08:15:48] [DEBUG] mobile_msg_callback, send back to mobile: {"result":"ok","id":9666}
+[20180101 08:15:48] [INFO] callback_queue_issue() id: 17397092, to: mobile
+[20180101 08:15:49] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:49] [DEBUG]  fd: 11, length: 398 bytes
+[20180101 08:15:49] [DEBUG] ACK timer fd: 8, timeout: 3000 ms
+[20180101 08:15:49] [INFO] cloud_handle_msg
+[20180101 08:15:49] [DEBUG] msg: {"id":343265284,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:49] [DEBUG] cloud ack: {"id":343265284,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:49] [INFO] report_msg_general_callback
+[20180101 08:15:49] [DEBUG] fd: 11, msg: {"id":343265284,"result":"ok"}
+[20180101 08:15:49] [DEBUG] data desc acked(-) id: 343265284
+[20180101 08:15:49] [INFO] ot_agent_send_ack_sock
+[20180101 08:15:49] [DEBUG] fd: 11, msg: {"id":343265284,"result":"ok"}.
+[20180101 08:15:49] [DEBUG] callback_queue_issue() id: 343265284, ret: 0
+[20180101 08:15:49] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:49] [DEBUG]  fd: 11, length: 398 bytes
+[20180101 08:15:49] [INFO] cloud_handle_msg
+[20180101 08:15:49] [DEBUG] msg: {"id":343265285,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:49] [DEBUG] cloud ack: {"id":343265285,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:49] [INFO] report_msg_general_callback
+[20180101 08:15:49] [DEBUG] fd: 11, msg: {"id":343265285,"result":"ok"}
+[20180101 08:15:49] [DEBUG] data desc acked(-) id: 343265285
+[20180101 08:15:49] [INFO] ot_agent_send_ack_sock
+[20180101 08:15:49] [DEBUG] fd: 11, msg: {"id":343265285,"result":"ok"}.
+[20180101 08:15:49] [DEBUG] callback_queue_issue() id: 343265285, ret: 0
+[20180101 08:15:51] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:51] [DEBUG]  fd: 11, length: 410 bytes
+[20180101 08:15:51] [INFO] cloud_handle_msg
+[20180101 08:15:51] [DEBUG] msg: {"id":343265286,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:51] [DEBUG] cloud ack: {"id":343265286,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:51] [INFO] report_msg_general_callback
+[20180101 08:15:51] [DEBUG] fd: 11, msg: {"id":343265286,"result":"ok"}
+[20180101 08:15:51] [DEBUG] data desc acked(-) id: 343265286
+[20180101 08:15:51] [INFO] ot_agent_send_ack_sock
+[20180101 08:15:51] [DEBUG] fd: 11, msg: {"id":343265286,"result":"ok"}.
+[20180101 08:15:51] [DEBUG] callback_queue_issue() id: 343265286, ret: 0
+[20180101 08:15:51] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:51] [DEBUG]  fd: 11, length: 389 bytes
+[20180101 08:15:52] [DEBUG] ack_timer_handler,3635: tmpd:0x23f28, id: 343265287, curr_time: 162036, ack_timeout: 164744, size: 432, tmpd->retry: 0
+[20180101 08:15:52] [INFO] cloud_handle_msg
+[20180101 08:15:52] [DEBUG] msg: {"id":343265287,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:52] [DEBUG] cloud ack: {"id":343265287,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:52] [INFO] report_msg_general_callback
+[20180101 08:15:52] [DEBUG] fd: 11, msg: {"id":343265287,"result":"ok"}
+[20180101 08:15:52] [DEBUG] data desc acked(-) id: 343265287
+[20180101 08:15:52] [INFO] ot_agent_send_ack_sock
+[20180101 08:15:52] [DEBUG] fd: 11, msg: {"id":343265287,"result":"ok"}.
+[20180101 08:15:52] [DEBUG] callback_queue_issue() id: 343265287, ret: 0
+[20180101 08:15:52] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:52] [DEBUG]  fd: 11, length: 389 bytes
+[20180101 08:15:52] [INFO] cloud_handle_msg
+[20180101 08:15:52] [DEBUG] msg: {"id":343265288,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:52] [DEBUG] cloud ack: {"id":343265288,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:52] [INFO] report_msg_general_callback
+[20180101 08:15:52] [DEBUG] fd: 11, msg: {"id":343265288,"result":"ok"}
+[20180101 08:15:52] [DEBUG] data desc acked(-) id: 343265288
+[20180101 08:15:52] [INFO] ot_agent_send_ack_sock
+[20180101 08:15:52] [DEBUG] fd: 11, msg: {"id":343265288,"result":"ok"}.
+[20180101 08:15:52] [DEBUG] callback_queue_issue() id: 343265288, ret: 0
+[20180101 08:15:52] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:52] [DEBUG]  fd: 11, length: 389 bytes
+[20180101 08:15:53] [INFO] cloud_handle_msg
+[20180101 08:15:53] [DEBUG] msg: {"id":343265289,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:53] [DEBUG] cloud ack: {"id":343265289,"result":"ok"}, strlen: 30, len: 31
+[20180101 08:15:53] [INFO] report_msg_general_callback
+[20180101 08:15:53] [DEBUG] fd: 11, msg: {"id":343265289,"result":"ok"}
+[20180101 08:15:53] [DEBUG] data desc acked(-) id: 343265289
+[20180101 08:15:53] [INFO] ot_agent_send_ack_sock
+[20180101 08:15:53] [DEBUG] fd: 11, msg: {"id":343265289,"result":"ok"}.
+[20180101 08:15:53] [DEBUG] callback_queue_issue() id: 343265289, ret: 0
+[20180101 08:15:54] [INFO] OT protocol diagrams come...
+[20180101 08:15:54] [INFO] handle_mobile_msg
+[20180101 08:15:54] [DEBUG]  msg: {"id":9667,"method":"get_prop","params":["umi"]}, strlen: 48, len: 48
+[20180101 08:15:54] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_prop","params":["umi"],"id":754634187}, strlen: 53
+[20180101 08:15:54] [DEBUG] cloud/mobile cmd: {"method":"get_prop","params":["umi"],"id":754634187}, strlen: 53, len: 53
+[20180101 08:15:54] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:54] [DEBUG]  fd: 11, length: 367 bytes
+[20180101 08:15:54] [DEBUG] mobile_msg_callback, send back to mobile: {"result":["{ \"DeviceName\": \"小米互联网音箱(123456789)\", \"channel_title\": \"经典也流行\", \"current_state\": \"TRANSITIONING\", \"hardware_version\": \"S602\", \"play_mode\": \"REPEAT_ALL\", \"track_artist\": \"呼斯楞\", \"track_duration\": \"00:00:00\", \"track_title\": \"鸿雁\", \"transport_channel\": \"PLAYLIST\" }"],"id":9667}
+[20180101 08:15:54] [INFO] callback_queue_issue() id: 754634187, to: mobile
+[20180101 08:15:57] [INFO] OT protocol diagrams come...
+[20180101 08:15:57] [INFO] Fill my DID
+[20180101 08:15:57] [INFO] Fill my TIMESTAMP
+[20180101 08:15:57] [INFO] OT protocol diagrams come...
+[20180101 08:15:57] [INFO] handle_mobile_msg
+[20180101 08:15:57] [DEBUG]  msg: {"id":9668,"method":"get_prop","params":["umi"]}, strlen: 48, len: 48
+[20180101 08:15:57] [DEBUG] handle_mobile_msg, newmsg: {"method":"get_prop","params":["umi"],"id":1184922637}, strlen: 54
+[20180101 08:15:57] [DEBUG] cloud/mobile cmd: {"method":"get_prop","params":["umi"],"id":1184922637}, strlen: 54, len: 54
+[20180101 08:15:57] [INFO] ot_agent_recv_handler_one
+[20180101 08:15:57] [DEBUG]  fd: 11, length: 368 bytes
+[20180101 08:15:57] [DEBUG] mobile_msg_callback, send back to mobile: {"result":["{ \"DeviceName\": \"小米互联网音箱(123456789)\", \"channel_title\": \"经典也流行\", \"current_state\": \"TRANSITIONING\", \"hardware_version\": \"S602\", \"play_mode\": \"REPEAT_ALL\", \"track_artist\": \"呼斯楞\", \"track_duration\": \"00:00:00\", \"track_title\": \"鸿雁\", \"transport_channel\": \"PLAYLIST\" }"],"id":9668}
+[20180101 08:15:57] [INFO] callback_queue_issue() id: 1184922637, to: mobile

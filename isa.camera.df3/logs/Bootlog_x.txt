@@ -1,0 +1,649 @@
+﻿
+U-Boot SPL 2013.07 (Jul 28 2017 - 17:10:01)
+pll_init:365
+l2cache_clk = 375000000
+pll_cfg.pdiv = 8, pll_cfg.h2div = 4, pll_cfg.h0div = 4, pll_cfg.cdiv = 1, pll_cf                                                                             g.l2div = 3
+nf=36 nr = 1 od0 = 1 od1 = 1
+cppcr is 02404900
+CPM_CPAPCR 0470890d
+nf=42 nr = 1 od0 = 1 od1 = 1
+cppcr is 02a04900
+CPM_CPMPCR 07d0c90d
+nf=50 nr = 1 od0 = 1 od1 = 1
+cppcr is 03204900
+CPM_CPVPCR 0320490d
+cppcr 0x9a794410
+apll_freq 860160000
+mpll_freq 1000000000
+vpll_freq = 1200000000
+ddr sel mpll, cpu sel apll
+ddrfreq 500000000
+cclk  860160000
+l2clk 286720000
+h0clk 250000000
+h2clk 250000000
+pclk  125000000
+DDRC_DLP:0000f003
+
+
+U-Boot 2013.07 (Jul 28 2017 - 17:10:01)
+
+Board: ISVP (Ingenic XBurst T20 SoC)
+DRAM:  128 MiB
+Top of RAM usable for U-Boot at: 84000000
+Reserving 399k for U-Boot at: 83f9c000
+Reserving 32784k for malloc() at: 81f98000
+Reserving 32 Bytes for Board Info at: 81f97fe0
+Reserving 124 Bytes for Global Data at: 81f97f64
+Reserving 128k for boot params() at: 81f77f64
+Stack Pointer at: 81f77f48
+Now running in RAM - U-Boot at: 83f9c000
+MMC:   msc: 0
+the manufacturer c8
+SF: Detected GD25Q128
+
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+misc_init_r before change the yellow_gpio
+gpio_request lable = yellow_gpio gpio = 38
+misc_init_r after gpio_request the yellow_gpio ret is 38
+misc_init_r after change the yellow_gpio ret is 0
+misc_init_r before change the blue_gpio
+gpio_request lable = blue_gpio gpio = 39
+misc_init_r after gpio_request the blue_gpio ret is 39
+misc_init_r after change the blue_gpio ret is 1
+gpio_request lable = night_gpio gpio = 81
+misc_init_r after gpio_request the night_gpio ret is 81
+misc_init_r after change the night_gpio ret is 0
+gpio_request lable = night_gpio gpio = 25
+misc_init_r after gpio_request the night_gpio ret is 25
+misc_init_r after change the night_gpio ret is 0
+gpio_request lable = night_gpio gpio = 49
+misc_init_r after gpio_request the night_gpio ret is 49
+misc_init_r after change the night_gpio ret is 0
+gpio_request lable = USB_able_gpio gpio = 47
+misc_init_r after gpio_request the USB_able_gpio ret is 47
+misc_init_r after change the USB_able_gpio ret is 1
+gpio_request lable = TF_able_gpio gpio = 43
+misc_init_r after gpio_request the TF_able_gpio ret is 43
+misc_init_r after change the TF_able_gpio ret is 1
+gpio_request lable = SPK_able_gpio gpio = 63
+misc_init_r after gpio_request the SPK_able_gpio ret is 63
+misc_init_r after change the SPK_able_gpio ret is 0
+gpio_request lable = SD_able_gpio gpio = 48
+misc_init_r after gpio_request the SD_able_gpio ret is 48
+misc_init_r after change the SD_able_gpio ret is 0
+Hit any key to stop autoboot:  0
+jiabo_do_auto_update!!!!!!!!!!!!!!!!!!!!!!!!
+gpio_request lable = sdupgrade gpio = 46
+the manufacturer c8
+SF: Detected GD25Q128
+
+jiabo_update_to_flash!!!!!!!!!!!!!!!!!!!!!!!!
+jiabo_au_do_update!!!!!!!!!!!!!!!!!!!!!!!!
+start=0
+start=40000
+len=40000
+flash check read...
+FWGRADEUP not find !!!!!!!!!
+gradeup check fail!!!!!!!!!!!!!!!!!!!
+the manufacturer c8
+SF: Detected GD25Q128
+
+Erasing SPI flash...addr align as 10000 !
+sfc erase error
+the manufacturer c8
+SF: Detected GD25Q128
+
+--->probe spend 4 ms
+SF: 2621440 bytes @ 0x40000 Read: OK
+--->read spend 381 ms
+## Booting kernel from Legacy Image at 80600000 ...
+   Image Name:   Linux-3.10.14
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1806186 Bytes = 1.7 MiB
+   Load Address: 80010000
+   Entry Point:  803e3aa0
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14 (root@ubuntu) (gcc version 4.7.2 (Ingenic r                                                                             2.3.3 2016.12) ) #20 PREEMPT Wed Aug 23 17:45:28 CST 2017
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:4BE90687
+[    0.000000] CPU0 revision is: 00d00101 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:860MHz L2CLK:430Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 0051c000 @ 00010000 (usable)
+[    0.000000]  memory: 00034000 @ 0052c000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 06800000 @ 00000000 (usable)
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x067fffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x067fffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 byt                                                                             es
+[    0.000000] pls check processor_id[0x00d00101],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pa                                                                             ges: 26416
+[    0.000000] Kernel command line: console=ttyS1,115200n8 mem=104M@0x0 ispmem=8                                                                             M@0x6800000 rmem=16M@0x7000000 init=/linuxrc rootfstype=squashfs root=/dev/mtdbl                                                                             ock2 rw mtdparts=jz_sfc:256k(boot),2048k(kernel),3392k(root),640k(driver),4736k(                                                                             appfs),2048k(backupk),640k(backupd),2048k(backupa),256k(config),256k(para),-(fla                                                                             g)
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 99428k/106496k available (3953k kernel code, 7068k reserv                                                                             ed, 1274k data, 208k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:418
+[    0.000000] clockevents_config_and_register success.
+[    0.000024] Calibrating delay loop... 858.52 BogoMIPS (lpj=4292608)
+[    0.087752] pid_max: default: 32768 minimum: 301
+[    0.092738] Mount-cache hash table entries: 512
+[    0.097839] Initializing cgroup subsys debug
+[    0.102100] Initializing cgroup subsys freezer
+[    0.109158] regulator-dummy: no parameters
+[    0.113398] NET: Registered protocol family 16
+[    0.134984] bio: create slab <bio-0> at 0
+[    0.141370] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.146616] SCSI subsystem initialized
+[    0.150552] usbcore: registered new interface driver usbfs
+[    0.156124] usbcore: registered new interface driver hub
+[    0.161558] usbcore: registered new device driver usb
+[    0.166862] i2c-gpio i2c-gpio.1: using pins 57 (SDA) and 58 (SCL)
+[    0.173070]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.179217] media: Linux media interface: v0.10
+[    0.183770] Linux video capture interface: v2.00
+[    0.190557] Switching to clocksource jz_clocksource
+[    0.195513] cfg80211: Calling CRDA to update world regulatory domain
+[    0.202589] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.207524] jz-dwc2 jz-dwc2: regulator vbus get error
+[    0.212610] DWC IN OTG MODE
+[    0.365862] sft id =========================off
+[    0.370490] dwc2 dwc2: Keep PHY ON
+[    0.373884] dwc2 dwc2: Using Buffer DMA mode
+[    0.578026] dwc2 dwc2: Core Release: 3.00a
+[    0.582149] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.588479] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.595868] hub 1-0:1.0: USB hub found
+[    0.599614] hub 1-0:1.0: 1 port detected
+[    0.603767] dwc2 dwc2: DWC2 Host Initialized
+[    0.608262] NET: Registered protocol family 2
+[    0.613243] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.620270] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.626749] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.633204] TCP: reno registered
+[    0.636402] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.642358] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.648960] NET: Registered protocol family 1
+[    0.653673] RPC: Registered named UNIX socket transport module.
+[    0.659606] RPC: Registered udp transport module.
+[    0.664439] RPC: Registered tcp transport module.
+[    0.669142] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.676180] freq_udelay_jiffys[0].max_num = 10
+[    0.680608] cpufreq  udelay  loops_per_jiffy
+[    0.685075] dwc2 dwc2: ID PIN CHANGED!
+[    0.688853] init DWC as A_HOST
+[    0.691957] 12000     59885   59885
+[    0.695177] 24000     119771  119771
+[    0.698620] 60000     299428  299428
+[    0.702177] 120000    598857  598857
+[    0.705633] 200000    998095  998095
+[    0.709164] 300000    1497142         1497142
+[    0.712975] 600000    2994285         2994285
+[    0.716609] 792000    3952457         3952457
+[    0.720317] 1008000   5030400         5030400
+[    0.724139] 1200000   5988571         5988571
+[    0.733510] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.740359] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.746955] msgmni has been set to 194
+[    0.752203] io scheduler noop registered
+[    0.756139] io scheduler cfq registered (default)
+[    0.762856] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.771047] console [ttyS1] enabled, bootconsole disabled
+[    0.771047] console [ttyS1] enabled, bootconsole disabled
+[    0.786267] brd: module loaded
+[    0.791525] loop: module loaded
+[    0.795804] zram: Created 2 device(s) ...
+[    0.800047] logger: created 256K log 'log_main'
+[    0.805476] jz SADC driver registeres over!
+[    0.810829] jz TCU driver register completed
+[    0.815910] the id code = c84018, the flash name is GD25Q127C
+[    0.821873] JZ SFC Controller for SFC channel 0 driver register
+[    0.828078] 11 cmdlinepart partitions found on MTD device jz_sfc
+[    0.834347] Creating 11 MTD partitions on "jz_sfc":
+[    0.839405] 0x000000000000-0x000000040000 : "boot"
+[    0.844973] 0x000000040000-0x000000240000 : "kernel"
+[    0.850624] 0x000000240000-0x000000590000 : "root"
+[    0.856189] 0x000000590000-0x000000630000 : "driver"
+[    0.861871] 0x000000630000-0x000000ad0000 : "appfs"
+[    0.867536] 0x000000ad0000-0x000000cd0000 : "backupk"
+[    0.873375] 0x000000cd0000-0x000000d70000 : "backupd"
+[    0.879152] 0x000000d70000-0x000000f70000 : "backupa"
+[    0.884993] 0x000000f70000-0x000000fb0000 : "config"
+[    0.890729] 0x000000fb0000-0x000000ff0000 : "para"
+[    0.896326] 0x000000ff0000-0x000001000000 : "flag"
+[    0.901807] SPI NOR MTD LOAD OK
+[    0.905185] tun: Universal TUN/TAP device driver, 1.6
+[    0.910423] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.916992] usbcore: registered new interface driver zd1201
+[    0.922844] usbcore: registered new interface driver r8152
+[    0.928607] usbcore: registered new interface driver usb-storage
+[    0.934983] usbcore: registered new interface driver usbserial
+[    0.941065] usbcore: registered new interface driver usbserial_generic
+[    0.947908] usbserial: USB Serial support registered for generic
+[    0.954191] usbcore: registered new interface driver ch341
+[    0.959905] usbserial: USB Serial support registered for ch341-uart
+[    0.966450] usbcore: registered new interface driver cp210x
+[    0.972269] usbserial: USB Serial support registered for cp210x
+[    0.978455] usbcore: registered new interface driver pl2303
+[    0.984285] usbserial: USB Serial support registered for pl2303
+[    1.491394] i8042: i8042 controller selftest timeout
+[    1.497056] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    1.542088] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    1.547478] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    1.593010] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    1.598490] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.604368] usbcore: registered new interface driver usbhid
+[    1.610143] usbhid: USB HID core driver
+[    1.614409] TCP: cubic registered
+[    1.617848] NET: Registered protocol family 17
+[    1.623502] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    1.630658] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    1.641819] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+[    1.649584] Freeing unused kernel memory: 208K (8052c000 - 80560000)
+[    1.795014] dwc2 dwc2:  ++OTG Interrupt: A-Device Timeout Change++
+mdev is ok......
+
+Ingenic-uc1_1 login: [    2.879624] register all isp device successfully!
+[    2.887356] @@@@ tx-isp-probe ok @@@@@
+[    2.939469] exFAT: Version 1.2.9
+[    3.029618] jz_codec_register: probe() successful!
+[    3.382381] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a47ef000)
+[    3.391637] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a47ee000)
+[    3.850197] RTL871X: module init start
+[    3.854178] RTL871X: rtl8189es v4.3.18.3_20185.20161116_pmpinclu_mac_monitor_minMem_EDCA542B_pbyr
+[    3.863432] RTL871X: build time: Aug 25 2017 09:49:30
+[    3.868673] wlan power on
+[    3.882499] RTL871X: module init ret=0
+[    3.940265] mmc1: new SDIO card at address 0001
+[    3.972416] bFWReady == _FALSE call reset 8051...
+[    4.002621] RTL871X: rtw_ndev_init(wlan0) if1 mac_addr=xx:xx:xx:xx:xx:xx
+GPIO 40   in
+GPIO 26   out
+GPIO 25   out
+GPIO 49   out
+GPIO 47   out
+GPIO 48   out
+GPIO 43   out
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+right_count=3  value=0 last_value=0
+not in singleboard test
+hello Guozhixin OKOKOKOKOKOKOKOKOKOK
+xxq:begin to check the sensor ty[    7.463508] name : i2c-gpio1 nr : 1
+pe
+[    7.472677] name : i2c0 nr : 0
+[    7.536617]  sensor_read: addr=0xa value = 0xf
+[    7.541621]  sensor_read: addr=0xb value = 0x22
+[    7.546339] info: success sensor find : jxf22
+##### sensor : jxf22
+[    7.551031] misc sinfo_release
+[    7.574451] zram0: detected capacity change from 0 to 16777216
+Setting up swapspace version 1, size = 16773120 bytes
+UUID=xxxx-xxxx-xxxx-xxxx
+[    7.593348] Adding 16380k swap on /dev/zram0.  Priority:-1 extents:1 across:16380k SS
+--------------------WDIOC_SETTIMEOUT  0 --------------------
+--------------------WDIOS_ENABLECARD  0 --------------------
+--------------------WDIOC_KEEPALIVE  0 --------------------
+Init WatchDog  !!!!
+msg_queue_remove_by_key_a: No such file or directory
+msg_queue_remove_by_key_a: No such file or directory
+msg_queue_remove_by_key_a: No such file or directory
+/etc/app/test_UP /etc/app/test_UP /etc/app/test_UP START START
+/bin/sh: can't create /sys/block/mmcblk0/queue/scheduler: nonexistent directory
+INIT App INFO XXXXXXXXXXXXXXXXXXXXXXXXXX
+uuuuuuuuuuuuuuuuuuuuu000
+-------------------------------------open gpio 46 direction
+-------------------------------------open gpio 25 direction
+gpio -------------  /sys/class/gpio/gpio25/value  0
+-------------------------------------open gpio 26 direction
+gpio -------------  /sys/class/gpio/gpio26/value  0
+-------------------------------------open gpio 38 direction
+gpio -------------  /sys/class/gpio/gpio38/value  0
+-------------------------------------open gpio 39 direction
+gpio -------------  /sys/class/gpio/gpio39/value  0
+-------------------------------------open gpio 49 direction
+gpio -------------  /sys/class/gpio/gpio49/value  0
+-------------------------------------open gpio 47 direction
+gpio -------------  /sys/class/gpio/gpio47/value  0
+-------------------------------------open gpio 48 direction
+gpio -------------  /sys/class/gpio/gpio48/value  0
+-------------------------------------open gpio 43 direction
+gpio -------------  /sys/class/gpio/gpio43/value  0
+motorport_open success
+motor_open: success
+++++++++++++++++++++++++++++++14
+current thread stack size:8388608
+set thread stack size:1048576
+1971164400
+current thread stack size:8388608
+set thread stack size:1048576
+1970115824
+++++++++++++++++++++++++++++++14
+test_UP plant form [guoke]
+sonix test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+g_nMsgQueueIdg_nMsgQueueIdg_nMsgQueueId = 0
+2007262464
+1998873856
+nRead acBuf[nReadLen-1] = a
+nRead acBuf[nReadLen-1] = a
+[START] test CONFIG_INFO_FIRMWARE = 5.5.1.161
+[START] Cam_firmware_HTTP = 5.5.1.161
+[START] CONFIG_INFO_FIRMWARE = 5.5.1.161
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             FIRM WARE VERSION : 5.5.1.161
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+g_stConfigTable[0] Wifi_Mode = D
+g_stConfigTable[1] Wifi_Active = y
+g_stConfigTable[2] Wifi_IP = x.x.x.x
+g_stConfigTable[3] Wifi_Subnet = 255.255.255.0
+g_stConfigTable[4] Wifi_Gateway = x.x.x.x
+g_stConfigTable[5] Wifi_DNS = x.x.x.x
+g_stConfigTable[6] Wired_IP = x.x.x.x
+g_stConfigTable[7] Wired_Mode = D
+g_stConfigTable[8] Wired_Subnet = 255.255.255.0
+g_stConfigTable[9] Wired_Gateway = x.x.x.x
+g_stConfigTable[10] Wired_DNS = x.x.x.x
+g_stConfigTable[11] Alarm_Motion_Switch = y
+g_stConfigTable[12] Alarm_Motion_Sensitivity = 5
+g_stConfigTable[13] Alarm_Motion_Region = 0,0;0,0
+g_stConfigTable[14] Alarm_Audio_Switch = y
+g_stConfigTable[15] Alarm_Audio_Sensitivity = 5
+g_stConfigTable[16] Alarm_Audio_SmokeYXMOD = 200
+g_stConfigTable[17] Alarm_pir_Switch = n
+g_stConfigTable[18] Light_Net = y
+g_stConfigTable[19] Light_Night = y
+g_stConfigTable[20] Video_IPS = 30
+g_stConfigTable[21] Video_Bright = 7
+g_stConfigTable[22] Video_Constract = 3
+g_stConfigTable[23] Video_Hflip = 1
+g_stConfigTable[24] Video_Vflip = 1
+g_stConfigTable[25] Video_Rate = 50
+g_stConfigTable[26] Video_Sample = 10
+g_stConfigTable[27] Video_OSD = 1
+g_stConfigTable[28] Audio_Channel = 1
+g_stConfigTable[29] Audio_Sample = 8000
+g_stConfigTable[30] Audio_Volume = 1
+g_stConfigTable[31] Device_State = u
+g_stConfigTable[32] Config_Version =
+g_stConfigTable[33] HW_Version =
+g_stConfigTable[34] SW_Version =
+g_stConfigTable[35] Server_URL = apicn.hualaikeji.com
+g_stConfigTable[36] P2p_UID =
+g_stConfigTable[37] Camera_Type = DF3
+g_stConfigTable[38] Camera_Mqtt_Server = bzycn.ismartalarm.com
+g_stConfigTable[39] Camera_UID = xxxxxx
+g_stConfigTable[40] Camera_AP_Key =
+g_stConfigTable[41] Camera_AP_Station = 0
+g_stConfigTable[42] Camera_following = 0
+g_stConfigTable[43] Camera_set_cruise = 0
+g_stConfigTable[44] Camera_control_cruise = 0
+g_stConfigTable[45] Camera_following_sensivity = 0
+g_stConfigTable[46] Xiaomi_Server_Str =
+g_stConfigTable[47] usb_enable_value = 1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@the NETRELATED_MAC is xxxx @@@@@@@@@@@@@@@@@@@@@@
+msg_queue_rcv time: 57FBBB01, id: 0, type: 2001, cmd: 2009
+[test_UP] 01/sbin/ifconfig wlan0 down
+msg_queue_rcv time: 57FBBB01, id: 0, type: 2001, cmd: 2009
+[test_UP] 01/sbin/ifconfig wlan0 hw ether xx:xx:xx:xx:xx:xx
+msg_queue_rcv time: 57FBBB01, id: 0, type: 2001, cmd: 2009
+[test_UP] 01/sbin/ifconfig wlan0 up
+[    9.482136] ==> rtl8188e_iol_efuse_patch
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@the NETRELATED_IP is xxxx @@@@@@@@@@@@@@@@@@@@@@
+++++++++++++++++++++++++++++++1
+Come Create Video Capture Thread!
+current thread stack size:8388608
+set thread stack size:1048576
+1969067248
+current thread stack size:8388608
+set thread stack size:1048576
+1968018672
+++++++++++++++++++++++++++++++1
+++++++++++++++++++++++++++++++3
+current thread stack size:8388608
+set thread stack size:1048576
+1966970096
+++++++++++++++++++++++++++++++3
+++++++++++++++++++++++++++++++4
+current thread stack size:8388608
+set thread stack size:1048576
+1965921520
+++++++++++++++++++++++++++++++4
+++++++++++++++++++++++++++++++2
+current thread stack size:8388608
+set thread stack size:1048576
+1964872944
+++++++++++++++++++++++++++++++2
+++++++++++++++++++++++++++++++6
+current thread stack size:8388608
+set thread stack size:1048576
+1963824368
+++++++++++++++++++++++++++++++6
+++++++++++++++++++++++++++++++7
+current thread stack size:8388608
+set thread stack size:1048576
+1962775792
+++++++++++++++++++++++++++++++7
+++++++++++++++++++++++++++++++8
+current thread stack size:8388608
+set thread stack size:1048576
+1961727216
+++++++++++++++++++++++++++++++8
+[GUOZHIXIN]AC_thread_init  8536
+[GUOZHIXIN]cloud_thread_init  8376
+g_pstCloudInfo->threadMsgId = 65538
+g_pstCloudInfo->processMsgId = 32769
+g_pstCloudInfo->acServerDomainAddr = apicn.hualaikeji.com
+cloud init ok okok okok okok okok ok
+NewsChannel thread start success
+NewsChannel_usrInfoClear: success
+NewsChannel initialize success
+[GUOZHIXIN]NewsChannel_threadRun  1356
+NewsChannel thread synchronization start
+FUNC VC_video_thread, line is 195, thread start time is 1476115202
+Come Start Video Capture Thread! Main loop========================
+[GUOZHIXIN]VC_video_thread  1000
+VC_thread_init  396080
+FUNC VC_video_thread, line is 214, thread init end time is 1476115202
+[GUOZHIXIN]audio_alarm_para_init  2364
+[GUOZHIXIN]networkset_thread  2056
+network init ok, creat check thread ok
+[   10.451977] codec_set_device: set device: speaker...
+++++++++++++++++++++++++++++++10
+current thread stack size:8388608
+set thread stack size:1048576
+1951941872
+++++++++++++++++++++++++++++++10
+++++++++++++++++++++++++++++++11
+current thread stack size:8388608
+set thread stack size:1048576
+1950893296
+++++++++++++++++++++++++++++++11
+++++++++++++++++++++++++++++++15
+current thread stack size:8388608
+set thread stack size:1048576
+1949844720
+++++++++++++++++++++++++++++++15
+++++++++++++++++++++++++++++++18
+current thread stack size:8388608
+set thread stack size:1048576
+1948796144
+current thread stack size:8388608
+set thread stack size:1048576
+1947747568
+++++++++++++++++++++++++++++++18
+++++++++++++++++++++++++++++++20
+current thread stack size:8388608
+set thread stack size:1048576
+1946698992
+++++++++++++++++++++++++++++++20
+++++++++++++++++++++++++++++++20
+current thread stack size:8388608
+set thread stack size:1048576
+1945650416
+++++++++++++++++++++++++++++++20
+++++++++++++++++++++++++++++++22
+current thread stack size:8388608
+set thread stack size:1048576
+1944601840
+++++++++++++++++++++++++++++++22
+Alarm_set_load_File
+jiabo_serial_port_lmsgid=65538
+jiabo_serial_port_rmsgid=32769
+[GUOZHIXIN]udpServer_init  2620
+[GUOZHIXIN]ioctl_thread  1032
+get_config_item_value(CONFIG_LIGHT_NIGHT       y
+==================================jiabo_ioctl_ircut_on=============================
+[GUOZHIXIN]local_storage_module_init  2909992
+[GUOZHIXIN]user_control_module_init  424
+current thread stack size:8388608
+set thread stack size:1048576
+1940636912
+current thread stack size:8388608
+set thread stack size:1048576
+1939588336
+current thread stack size:8388608
+set thread stack size:1048576
+1938539760
+current thread stack size:8388608
+set thread stack size:1048576
+1937491184
+child_process_init: success
+child process synchronization start, time is 1476115203
+1111111111111111111111111111111111111111111111111111110ret=0
+CC THREAD START
+XIAOMI_THREAD get Str XXXXXXXXXXX|xxx-did-xxx|xxx-key-xxx|3083
+XXXXXXXXXXX
+xxx-did-xxx
+xxx-key-xxx
+3083
+stLocalStorage.threadMsgIdstLocalStorage.threadMsgIdstLocalStorage.threadMsgId = 65538
+=============================jiabo_ioctl_ircut_off===========================
+get valid flag =  0
+[samba] set time 0, 8
+[samba] set time 1, 17
+[samba] set time 2, 25
+[samba] set time 3, 25
+IOTC_Initialize2 success
+????????????????????????????IOTC_Get_Version   33622025  ??????????????????????????
+******* sd_ready 0, sd_long 1 timezone_min 28800********
+current thread stack size:8388608
+set thread stack size:1048576
+1919153392
+current thread stack size:8388608
+set thread stack size:1048576
+1918104816
+current thread stack size:8388608
+set thread stack size:1048576
+1917056240
+current thread stack size:8388608
+set thread stack size:1048576
+1916007664
+current thread stack size:8388608
+set thread stack size:1048576
+1914959088
+current thread stack size:8388608
+set thread stack size:1048576
+1913910512
+NewsChannel thread synchronization stop
+local_storage_thread ok
+++++++++++++++++++++++++++++++++child_process_synchronization ok++++++++++++++++++++++++
+child process synchronization end, time is 1476115204
+acTmpBuf = y, lTmpLen = 1
+io module sync ok
+[GUOZHIXIN]Xiaomi_Thread_Init  2064
+g_pstCloudInfo->threadMsgId = 65538
+g_pstCloudInfo->processMsgId = 32769
+[GUOZHIXIN]G711_encode_thread
+FUNC VC_video_thread, line is 216, thread sync after time is 1476115204
+Udp Server start success
+read buf 22  ISA_VERSION=5.5.1.161
+XwSzbNfyk1Lohyny
+write buf  ISA_VERSION=5.5.1.161
+  22
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IR_CUT_STATE_CLOSE222222222222222!!!!!!!!!!!!!!!!!!!!!!!!!
+jiabo_LED_STATE_OFF
+!!!!!!!!!!!!=============================jiabo_ioctl_ircut_off===========================
+nPCMBufferSize  2048,nMaxOutputBytes  768
+aac_encoder_init ret value:0
+sample_system_init info: name is jxf22, i2c addr is 64
+[GUOZHIXIN]AAC_decode_thread  6144
+[   11.882275] set sensor gpio as PA-low-10bit
+[   11.923218] jxf22 0-0040: jxf22 chip found @ 0x40 (i2c0)
+[   11.931073] tx_isp: Registered sensor subdevice jxf22 0-0040
+*************************************************************
+******************    begin Cooee      **************
+*************************************************************
+msg_queue_rcv time: 57FBBB04, id: 0, type: 2001, cmd: 2009
+[test_UP] 01wpa_cli -p /var/run/wpa_supplicant -i wlan0 disconnect
+Failed to connect to non-global ctrl_ifname: wlan0  error: No such file or directory
+[   12.132018] codec_set_device: set device: MIC...
+set safe_suppression_value 1.500000
+AudioAlarmMain: level=-43
+the org sensor fps_num is 15, fps_den is 1
+i264e[info]: profile Main, level 4.0
+IMP_Encoder_SetMbRC_ENABLE!!!
+i264e[info]: profile Main, level 2.2
+******sample_framesource_streamon test to enable frame channel i[   12.685110] &&& chan1  scaler.max_width = 1920 max_height = 1080  min_width = 128 min_height = 128 &&&
+s 0***********
+[chn0] scaler->outwidth = 1920 scaler->outheight = 1080, sscaler[   12.706915] &&& chan2  scaler.max_width = 800 max_height = 800  min_width = 128 min_height = 128 &&&
+.outwidth = 1920 sscaler.outheight = 1080
+******sample_framesource_streamon test to enable frame channel is 1***********
+[chn1] scaler->outwidth = 640 scaler->outheight = 360, sscaler.outwidth = 640 sscaler.outheight = 360
+(((((((((((((((((jiabo_OSD_VC_OSD_set   0   1  )))))))))))))))))))
+-----------------------------Video After Sync!!
+-----------------------------Video After begin!!
+*********************************video_channel[].resolution**** 7 *********************
+@@@@@@@@@@@@@@@Apps set the bitrate is 400@@@@@@@@@@@@@@
+******stop_framesource_channel test to disable frame channel is 0***********
+dtdEnable = 1
+dtdBandNum = 4
+dtdPowThd = 60000000.000000
+dtdDxRatio = 0.100000
+safeSupression = 1.500000
+############stop_framesource_channel ret is 0###############
+i264e[info]: profile Main, level 4.0
+IMP_Encoder_SetMbRC_DISABLE!!!
+******start_framesource_channel [   13.257806] &&& chan1  scaler.max_width = 1920 max_height = 1080  min_width = 128 min_height = 128 &&&
+test to enable frame channel is 0***********
+[chn0] scaler->outwidth = 1920 scaler->outheight = 1080, sscaler.outwidth = 1920 sscaler.outheight = 1080
+((((((((((((((((((((????????????????????????????)))))))))))))))))))))
+((((((((((((((((((((Video_Code_Status_N  is  1   1  )))))))))))))))))))))
+((((((((((((((((((((????????????????????????????)))))))))))))))))))))
+((((((((((((((((((((????????????????????????????)))))))))))))))))))))
+((((((((((((((((((((Video_Jpeg_Status  is  2   )))))))))))))))))))))
+((((((((((((((((((((????????????????????????????)))))))))))))))))))))
+current dac value is 900
+jiabo_IR_CUT CLOSE!!!!!!!!!!!!!!!!!!!!!!
+RCV FROM SINGLE CHIP MACHINE  IR_CUT CLOSE
+ir_cut_state_msghandler(int nFlag) = 0

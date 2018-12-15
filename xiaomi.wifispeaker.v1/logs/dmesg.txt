@@ -1,0 +1,915 @@
+root@OpenWrt:/# dmesg
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.10.33-g265b042 (builder@sq-mitv-sb-build00) (gcc version 4.8.3 (OpenWrt/Linaro GCC 4.8-2014.04 r42943) ) #1 PREEMPT Fri Jun 30 14:18:08 CST 2017
+[    0.000000] CPU: ARMv7 Processor [412fc094] revision 4 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Amlogic Meson3, model: AMLOGIC
+[    0.000000] physical memory start address is 0x80000000
+[    0.000000] reserved_end is 853fffff
+[    0.000000]  reserved 0x87ef0000-0x87f00000 1M memory for firmware
+[    0.000000] Total memory is  128 MiB
+[    0.000000] Reserved low memory from 0x85000000 to 0x853fffff, size:   4 MiB
+[    0.000000]  mesonfb0(low)           : 0x85100000 - 0x85300000 (  2 MiB)
+[    0.000000]  mesonfb1(low)           : 0x85300000 - 0x85400000 (  1 MiB)
+[    0.000000] [get_storage_device] storage_flag=2
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 31488
+[    0.000000] free_area_init_node: node 0, pgdat c081b4e8, node_mem_map c0879000
+[    0.000000]   Normal zone: 254 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 31488 pages, LIFO batch:7
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 31234
+[    0.000000] Kernel command line: root=/dev/mmcblk0p10 rootfstype=ext4 rootwait init=/sbin/init console=ttyS0,115200n8 no_console_suspend debug nohlt a9_clk=600M clk81=200M storage=2
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 80MB 43MB = 123MB total
+[    0.000000] Memory: 116044k/116044k available, 9908k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xc8000000 - 0xff000000   ( 880 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7f00000   ( 127 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc079f3a0   (7773 kB)
+[    0.000000]       .init : 0xc07a0000 - 0xc07cd0cc   ( 181 kB)
+[    0.000000]       .data : 0xc07ce000 - 0xc081c000   ( 312 kB)
+[    0.000000]        .bss : 0xc081c000 - 0xc0878450   ( 370 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:128
+[    0.000000] sched_clock: 32 bits at 1000kHz, resolution 1000ns, wraps every 4294967ms
+[    0.000000] Global timer: MESON TIMER-A (c07deb80) initialized
+[    0.000000] Disable timerA
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] meson_serial_console_setup
+[    0.000000] console [ttyS0] enabled
+[    0.278613] Calibrating delay loop... 795.44 BogoMIPS (lpj=3977216)
+[    0.320064] pid_max: default: 32768 minimum: 301
+[    0.321845] Security Framework initialized
+[    0.325812] SELinux:  Initializing.
+[    0.329324] SELinux:  Starting in permissive mode
+[    0.334069] Mount-cache hash table entries: 512
+[    0.339407] CPU: Testing write buffer coherency: ok
+[    0.343826] Setting up static identity map for 0xc05ce308 - 0xc05ce360
+[    0.350118] L310 cache controller enabled
+[    0.353906] l2x0: 8 ways, 512 sets, CACHE_ID 0x4100a0c8,  Cache size: 131072 B
+[    0.361148]       AUX_CTRL 0x3e420000, PERFETCH_CTRL 0x30000006, POWER_CTRL  0x00000000
+[    0.369127]       TAG_LATENCY 0x00000111, DATA_LATENCY 0x00000111
+[    0.376234] devtmpfs: initialized
+[    0.380131] clkrate [ xtal   ] : 24000000
+[    0.382441] clkrate [ pll_sys        ] : 800000000
+[    0.386770] clkrate [ pll_fixed      ] : 800000000
+[    0.391225] clkrate [ pll_ddr        ] : 468000000
+[    0.395468] clkrate [ a9_clk         ] : 800000000
+[    0.399643] clkrate [ clk81  ] : 200000000
+[    0.404915] pinctrl core: initialized pinctrl subsystem
+[    0.409156] NET: Registered protocol family 16
+[    0.414141] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.434683] amlogic_gpio gpio: Probed amlogic meson3 GPIO driver
+[    0.435416] register lm device lm-root
+[    0.439110] register lm device lm0
+[    0.443378] Init pinux probe!
+[    0.445671] pinmux-m3 pinmux: Probed amlogic pinctrl driver
+[    0.451355] aml_i2c version: 20140813
+[    0.454477] plat->state_name:default
+[    0.457955] master_no = 1, master_regs=f1108500
+[    0.463070] aml-i2c i2c-A: add adapter aml_i2c_adap1(c79520a8)
+[    0.468296] aml-i2c i2c-A: aml i2c bus driver.
+[    0.532853] bio: create slab <bio-0> at 0
+[    0.534619] SCSI subsystem initialized
+[    0.535517] usbcore: registered new interface driver usbfs
+[    0.541396] usbcore: registered new interface driver hub
+[    0.546074] usbcore: registered new device driver usb
+[    0.555998] Advanced Linux Sound Architecture Driver Initialized.
+[    0.558053] Bluetooth: Core ver 2.16
+[    0.560973] NET: Registered protocol family 31
+[    0.564898] Bluetooth: HCI device and connection manager initialized
+[    0.571528] Bluetooth: HCI socket layer initialized
+[    0.576125] Bluetooth: L2CAP socket layer initialized
+[    0.581273] Bluetooth: SCO socket layer initialized
+[    0.586939] cfg80211: Calling CRDA to update world regulatory domain
+[    0.593997] Switching to clocksource Timer-E
+[    0.628198] NET: Registered protocol family 2
+[    0.628733] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.633898] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.640781] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.646652] TCP: reno registered
+[    0.649980] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.655639] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.662155] NET: Registered protocol family 1
+[    0.666586] RPC: Registered named UNIX socket transport module.
+[    0.672244] RPC: Registered udp transport module.
+[    0.676903] RPC: Registered tcp transport module.
+[    0.681553] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.688113] wifi_dev_probe
+[    0.690692] wifi_dt : interrupt_pin=GPIOA_17
+[    0.694959] wifi_dt : irq_num=null
+[    0.698390] wifi_dt : irq_trigger_type=GPIO_IRQ_HIGH
+[    0.703304] wifi_dt : power_on_pin=GPIOX_10
+[    0.707540] wifi_dt : clock_32k_pin=GPIOAO_11
+[    0.711834] interrupt_pin=153, irq_num=4, irq_trigger_type=0, power_on_pin=33,clock_32k_pin=175
+[    0.722960] audit: initializing netlink socket (disabled)
+[    0.725969] type=2000 audit(0.650:1): initialized
+[    0.744498] VFS: Disk quotas dquot_6.5.2
+[    0.744922] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.753626] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.755834] exFAT: Core Version 1.2.4
+[    0.759468] exFAT: FS Version 1.2.4
+[    0.764372] NFS: Registering the id_resolver key type
+[    0.767756] Key type id_resolver registered
+[    0.771496] Key type id_legacy registered
+[    0.775550] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.786379] fuse init (API version 7.22)
+[    0.790885] msgmni has been set to 226
+[    0.792947] SELinux:  Registering netfilter hooks
+[    0.800106] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.804996] io scheduler noop registered
+[    0.809159] io scheduler deadline registered
+[    0.813549] io scheduler cfq registered (default)
+[    0.818322] meson3-pwm meson_pwm: pinctrl_name = meson3-pwm1
+[    0.823526] meson3-pwm meson_pwm: register pwm device.. meson_pwm_probe
+[    1.040864] loop: module loaded
+[    1.042863] tun: Universal TUN/TAP device driver, 1.6
+[    1.043413] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.050534] PPP generic driver version 2.4.2
+[    1.054508] PPP BSD Compression module registered
+[    1.058927] PPP Deflate Compression module registered
+[    1.063613] PPP MPPE Compression module registered
+[    1.068541] NET: Registered protocol family 24
+[    1.073946] usbcore: registered new interface driver usb-storage
+[    1.079831] mousedev: PS/2 mouse device common for all mice
+[    1.085516] i2c /dev entries driver
+[    1.088659] Bluetooth: HCI UART driver ver 2.2
+[    1.092310] Bluetooth: HCI H4 protocol initialized
+[    1.099027] zram: Created 1 device(s) ...
+[    1.101573] ashmem: initialized
+[    1.104657] aml_wdt_driver_init,303
+[    1.107925] ** disable watchdog
+[    1.111003] one-secod=100000,min_timeout=1,max_timeout=41,default_timeout=10,reset_watchdog_method=0,reset_watchdog_time=2,shutdown_timeout=10,firmware_timeout=6,suspend_timeout=6
+[    1.127851] AML Watchdog Timer probed done
+[    1.131406] keys===========================================
+[    1.136593] keys_devno=fa00000
+[    1.140422] securitykey: device aml_keys created
+[    1.144268] amlkeys=0
+[    1.146893] platform_driver_register--aml_keys_driver--------------------
+[    1.153964] set uart_ao pinmux use pinctrl subsystem
+[    1.158507] P_AO_RTI_PIN_MUX_REG:1800
+[    1.161937] start uart_ao_ttyS0:(irq = 90)
+[    1.165996] register uart_ao ok
+[    1.169868] set uart_a pinmux use pinctrl subsystem
+[    1.174000] P_AO_RTI_PIN_MUX_REG:1800
+[    1.177837] start uart_a_ttyS1:(irq = 26)
+[    1.181655] register uart_a ok
+[    1.185022] dwc_otg: version 2.20a 13-Jan-2012
+[    1.189321] dwc_otg lm-root: dwc_otg_driver_probe(c794c000)
+[    1.194710] dwc_otg_driver_probe NOT match
+[    1.198887] dwc_otg lm0: dwc_otg_driver_probe(c794c200)
+[    1.204055] usb0: type: 1, speed: 0, config: 0, dma: 0, id: 1, phy: f1108404, ctrl: f9040000
+[    1.212582] USB use clock source: XTAL input
+[    1.219158] dwc_otg lm0: core work at High speed.
+[    1.221418] dwc_otg lm0: DMA config: DISABLE
+[    1.636688] dwc_otg lm0: Working on port type = HOST
+[    1.636734] DWC_otg: Using DMA mode
+[    1.639497] dwc_otg lm0: DWC OTG Controller
+[    1.643720] dwc_otg lm0: new USB bus registered, assigned bus number 1
+[    1.650277] dwc_otg lm0: irq 30, io mem 0x00000000
+[    1.655013] DWC_otg: Init: Port Power? op_state=1
+[    1.659707] DWC_otg: Init: Power Port (0)
+[    1.663679] set usb port power on (board gpio 143)!
+[    1.669687] hub 1-0:1.0: USB hub found
+[    1.672321] hub 1-0:1.0: 1 port detected
+[    1.676871] Amlogic nand flash Kernel driver, Version K1.06.015 (c) 2010 Amlogic Inc.
+[    1.684038] ####Version of Uboot must be newer than U1.06.011!!!!!
+[    1.690462] ===========================================m3_nand_probe:1306,nand device tree ok,dev-name:nand2
+[    1.700155] m3_get_nand_platform:1750,find enable pad finished
+[    1.705963] m3_get_nand_platform:1763,find busy_pad finished
+[    1.711693] m3_get_nand_platform:1775,find timming_mode finished
+[    1.717671] m3_get_nand_platform:1787,find bch_mode finished
+[    1.723275] m3_get_nand_platform:1799,find plane_modefinished
+[    1.729060] m3_get_nand_platform:1855,parse dts
+[    1.733544] chip->controller=c0869640
+[    1.737223] ###plat->platform_nand_data.chip.nr_chips =1
+[    1.742511] init bus_cycle=17, bus_timing=10, start_cycle=10, end_cycle=10,system=5.0ns
+[    1.750735] No NAND device found
+[    1.753907] NAND device id: 8 e8 e8 e8 e8 e8
+[    1.758121] No NAND device found!!!
+[    1.761595] m3_get_nand_platform:1750,find enable pad finished
+[    1.767522] m3_get_nand_platform:1763,find busy_pad finished
+[    1.773041] m3_get_nand_platform:1775,find timming_mode finished
+[    1.779077] m3_get_nand_platform:1787,find bch_mode finished
+[    1.784698] m3_get_nand_platform:1799,find plane_modefinished
+[    1.790471] m3_get_nand_platform:1855,parse dts
+[    1.794965] chip->controller=c0869640
+[    1.798634] ###plat->platform_nand_data.chip.nr_chips =1
+[    1.803931] init bus_cycle=17, bus_timing=10, start_cycle=10, end_cycle=10,system=5.0ns
+[    1.812100] No NAND device found
+[    1.815316] NAND device id: 8 e8 e8 e8 e8 e8
+[    1.819533] No NAND device found!!!
+[    1.823445] efuse===========================================
+[    1.829395] efuse: device efuse created
+[    1.832728] efuse--------------------------------------------
+[    1.838327] SARADC Driver init.
+[    1.841681] __saradc_probe__
+[    1.986790] saradc calibration: ref_val = 513
+[    1.986824] saradc calibration: ref_nominal = 512
+[    1.990206] saradc calibration: coef = 4096
+[    1.994662] ADC Keypad Driver init.
+[    1.998079] ==kp_probe==
+[    2.000413] chan #4 used for ADC key
+[    2.003953] volup key(103) registed.
+[    2.007596] voldn key(108) registed.
+[    2.011087] chann key(106) registed.
+[    2.014654] chanp key(105) registed.
+[    2.018665] input: adc_keypad as /devices/platform/adc_keypad.4/input/input0
+[    2.025760] adc keypad register input device completed.
+[    2.030729] adc keypad major:248
+[    2.034742] Encoder Keypad Driver init.
+[    2.037961] Enter encoder_key_probe
+[    2.041260] encoder_key_probe: key_num = 4
+[    2.045279] encoder_key_probe: key[0]->plus_code = 75
+[    2.050406] encoder_key_probe: key[0]->minus_code = 77
+[    2.055458] encoder_key_probe: key[0]->A_pin = 150
+[    2.060380] encoder_key_probe: key[0]->B_pin = 149
+[    2.065028] encoder_key_probe: key[0]->rising_irq = 1
+[    2.070122] encoder_key_probe: key[0]->falling_irq = 0
+[    2.075208] encoder_key_probe: key[1]->plus_code = 72
+[    2.080275] encoder_key_probe: key[1]->minus_code = 80
+[    2.085386] encoder_key_probe: key[1]->A_pin = 148
+[    2.090184] encoder_key_probe: key[1]->B_pin = 147
+[    2.094955] encoder_key_probe: key[1]->rising_irq = 3
+[    2.100159] encoder_key_probe: key[1]->falling_irq = 2
+[    2.105222] report_key_func 138 :
+[    2.108425] encoder_key_probe 575 : key(75) registed.
+[    2.116989] 77 key
+[    2.113572] encoder_key_probe 576 :
+[    2.118974] report_key_func 138 : 75 key
+[    2.123063] key(77) registed.
+[    2.126014] encoder_key_probe 575 : key(72) registed.
+[    2.131059] encoder_key_probe 576 : key(80) registed.
+[    2.136523] input: encoder_keypad as /devices/platform/encoder_keypad.5/input/input1
+[    2.144432] encoder_key_probe: Encoder keypad major:247
+[    2.150233] GPIO Keypad Driver init.
+[    2.152760] gpio_key_probe
+[    2.155437] 1 key registed.
+[    2.158271] 28 key registed.
+[    2.160987] 32 key registed.
+[    2.163858] 59 key registed.
+[    2.166823] 60 key registed.
+[    2.169600] 61 key registed.
+[    2.172886] input: gpio_keypad as /devices/platform/gpio_keypad.7/input/input2
+[    2.180350] gpio keypad register input device completed.
+[    2.185100] gpio keypad major:246
+[    2.189548] wake_src_probe
+[    2.191110] 200 key registed.
+[    2.194047] 201 key registed.
+[    2.197310] 202 key registed.
+[    2.199964] 203 key registed.
+[    2.202921] 204 key registed.
+[    2.205879] 205 key registed.
+[    2.209351] input: wake_src as /devices/platform/wake_src.8/input/input3
+[    2.215991] register input device completed.
+[    2.220133] register_wakesrc_dev major:245
+[    2.224825] wake_src_init wake up source Driver init 0.
+[    2.229496] mmc driver version: 1.07, 2014-06-30: eMMC add hw reset function
+[    2.237069] host->base f1108c20
+[    2.239444] pdata->caps 107
+[    2.242160] pdata->caps2 0
+[    2.244858] get property:                     port, value:0x00000002
+[    2.251483] get property:                ocr_avail, value:0x00200000
+[    2.257621] get property:                    f_min, value:0x000493e0
+[    2.263912] get property:                    f_max, value:0x02faf080
+[    2.270330] get property:                  f_max_w, value:0x02faf080
+[    2.276613] get property:             max_req_size, value:0x00020000
+[    2.283012] get property:                  pinname, str:emmc
+[    2.288655] get property:                card_type, value:0x00000001
+[    2.294976] get property:                gpio_dat3, str:BOOT_3
+[    2.300957] [is_emmc_exist] host->storage_flag=2, POR_BOOT_VALUE=3
+[    2.352119] pdata->caps 107
+[    2.352149] pdata->caps2 0
+[    2.352169] get property:                     port, value:0x00000001
+[    2.360588] get property:                ocr_avail, value:0x00200000
+[    2.364714] get property:                    f_min, value:0x000493e0
+[    2.371090] get property:                    f_max, value:0x01c9c380
+[    2.377501] get property:                  f_max_w, value:0x01c9c380
+[    2.383833] get property:             max_req_size, value:0x00020000
+[    2.390252] get property:                  pinname, str:sd
+[    2.395670] get property:                card_type, value:0x00000003
+[    2.413237] emmc: BKOPS_EN bit is not set
+[    2.413269] ###check hw reset function is already enabled here
+[    2.419497] emmc: new high speed MMC card at address 0001, clock 50000000, 4-bit-bus-width
+[    2.426362] mmcblk0: emmc:0001 8GME4R 7.28 GiB
+[    2.430512] mmcblk0boot0: emmc:0001 8GME4R partition 1 4.00 MiB
+[    2.436288] mmcblk0boot1: emmc:0001 8GME4R partition 2 4.00 MiB
+[    2.457946]  mmcblk0: p1
+[    2.458972] Delete invalid mbr partition part c79d7e00, part->partno 1
+[    2.462523] emmc read lba=0x800, blocks=0x1 OK!
+[    2.466562] emmc read lba=0x801, blocks=0x1 OK!
+[    2.470520] [mmc_read_partition_tbl] mmc read partition OK!
+[    2.475970] add_emmc_partition
+[    2.479081] [aml_sdio_probe] aml_sdio_probe() success!
+[    2.484940] device name=nand_key open error
+[    2.488674] [mmcblk0p01]           bootloader  offset 0x000000000000, size 0x000000100000
+[    2.496933] aml_keys: version 0 can not be init c08039dc
+[    2.501987] device name=emmc_key open error
+[    2.506248] aml_keys: version 0 can not be init c08039dc
+[    2.512074] [mmcblk0p02]             reserved  offset 0x000000100000, size 0x000000100000
+[    2.520423] [mmcblk0p03]                cache  offset 0x000000200000, size 0x000008000000
+[    2.529323] aml_rtc rtc.0: rtc core: registered aml_rtc as rtc0
+[    2.535251] [mmcblk0p04]                  env  offset 0x000008200000, size 0x000000100000
+[    2.543096] amlogic rfkill init
+[    2.545460] enter bt_probe of_node
+[    2.549454] not get gpio_en
+[    2.551574] not get gpio_wake
+[    2.554661] [mmcblk0p05]                  dtb  offset 0x000008300000, size 0x000000100000
+[    2.563470] [mmcblk0p06]                 boot  offset 0x000008400000, size 0x000000800000
+[    2.571631] [mmcblk0p07]               system  offset 0x000008c00000, size 0x000008000000
+[    2.579796] BT_RADIO going: on
+[    2.582372] BCM_BT: going ON
+[    2.585705] [mmcblk0p08]                 dtb1  offset 0x000010c00000, size 0x000000100000
+[    2.594103] [mmcblk0p09]                boot1  offset 0x000010d00000, size 0x000000800000
+[    2.602478] [mmcblk0p10]              system1  offset 0x000011500000, size 0x000008000000
+[    2.610683] [mmcblk0p11]             userdata  offset 0x000019500000, size 0x000008000000
+[    2.618884] [mmcblk0p12]                media  offset 0x000021500000, size 0x0001b0b00000
+[    2.626608] card key: card_blk_probe.
+[    2.630458] emmc_key_init:428 emmc key lba_start:0x820,lba_end:0xa20
+[    2.636828] wifi_request_32k_clk : OFF-->ON for bt_rfkill
+[    2.642143] clock_32k_pin(175) : (null)
+[    2.645992] clock_32k_pin(175) : sdio_wifi
+[    2.650135] key 1 up
+[    2.652238] key 28 up
+[    2.654496] key 32 up
+[    2.656832] i=0,register --- emmc_key
+[    2.660412] emmc key: emmc_key_init:450 ok.
+[    2.664811] key 59 up
+[    2.667151] key 60 up
+[    2.669199] key 61 down
+[    2.671709] Exit aml_emmc_partition_ops OK.
+[    2.676217] key 0 up
+[    2.680073]  mmcblk0boot1: p1
+[    2.680993] mmcblk0boot1: p1 start 16065 is beyond EOD, truncated
+[    2.689775]  mmcblk0boot0: p1
+[    2.690037] mmcblk0boot0: p1 start 16065 is beyond EOD, truncated
+[    2.777007] Bluetooth: BlueSleep Mode Driver Ver 1.2
+[    2.777146] Bluetooth: bt_host_wake 154, bt_ext_wake 45
+[    2.781582] Bluetooth: host_wake_irq 5, polarity 1
+[    2.786838] Interrupt for sound system Driver init.
+[    2.791341] Enter int_sound_probe
+[    2.794518] ====== int_sound_probe int num 1
+[    2.799030] int_sound_probe: int_num = 1
+[    2.802692] int_sound_probe: key[0]->I_pin = 41
+[    2.807346] register_int_sound_dev major:244
+[    2.814098] *****enter pcm2bt_codec_probe
+[    2.815494] pcm2bt_codec_probe ok!
+[    2.819411] enter aml_dai_probe
+[    2.822384] [aml-spdif-dai]aml_spdif_probe
+[    2.826615] aml: Failed to create debugfs directory
+[    2.831649] enter spdif_dit_probe
+[    2.834447] aml_spdif_unmute
+[    2.837957] --------aml_m3_codec_platform_probe---
+[    2.842612] enter aml_m3_audio_probe
+[    3.476713] aml_m3_codec aml_m3_codec.0: ASoC: Failed to add LINEOUT Playback Volume: -16
+[    3.479561] enter aml_set_bias_level level: 1
+[    3.483607] enter aml_set_bias_level level: 2
+[    3.488054] enter aml_set_bias_level level: 1
+[    3.492445] enter aml_set_bias_level level: 1
+[    3.496861] enter aml_set_bias_level level: 1
+[    3.501007] enter aml_set_bias_level level: 2
+[    3.505387] enter aml_set_bias_level level: 2
+[    3.509812] enter aml_asoc_init
+[    3.513093] enter aml_set_bias_level level: 1
+[    3.517431] enter aml_set_bias_level level: 1
+[    3.521626] enter aml_set_bias_level level: 2
+[    3.525977] enter aml_set_bias_level level: 1
+[    3.530434] enter aml_set_bias_level level: 2
+[    3.534690] enter aml_set_bias_level level: 2
+[    3.539218] rtd c780c010
+[    3.541635] cpu_dai c78ca800
+[    3.544591] codec_dai c78cac00
+[    3.547927] enter aml_platform_pcm_new (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[    3.555963] aml-i2s 0:playback preallocate_dma_buffer: area=c80e3000, addr=87000000, size=524288
+[    3.564755] aml-i2s 1:capture preallocate_dma_buffer: area=c8165000, addr=87100000, size=262144
+[    3.572723] aml_m3_card aml_m3_sound_card.2:  AML-M3 <-> aml-dai0 mapping ok
+[    3.579743] enter aml_set_bias_level level: 1
+[    3.584005] enter aml_set_bias_level level: 2
+[    3.588424] enter aml_set_bias_level level: 1
+[    3.592705] enter aml_set_bias_level level: 2
+[    3.597216] enter aml_set_bias_level level: 1
+[    3.601404] enter aml_set_bias_level level: 2
+[    3.605945] rtd c780c5d4
+[    3.608433] cpu_dai c78caa00
+[    3.611321] codec_dai c78cab00
+[    3.614456] enter aml_platform_pcm_new (codec_dai: dit-hifi 0 cpu_dai: aml-spdif-dai.0 0)
+[    3.623528] aml-i2s 0:playback preallocate_dma_buffer: area=c81e6000, addr=87200000, size=524288
+[    3.632311] aml-i2s 1:capture preallocate_dma_buffer: area=c8268000, addr=87180000, size=262144
+[    3.640203] aml_m3_card aml_m3_sound_card.2:  dit-hifi <-> aml-spdif-dai.0 mapping ok
+[    3.648193] enter aml_set_bias_level level: 1
+[    3.652300] enter aml_set_bias_level level: 2
+[    3.656706] enter aml_set_bias_level level: 1
+[    3.661000] enter aml_set_bias_level level: 2
+[    3.665350] enter aml_set_bias_level level: 1
+[    3.669761] enter aml_set_bias_level level: 2
+[    3.674196] rtd c780cb98
+[    3.676690] cpu_dai c78ca900
+[    3.679616] codec_dai c78ca700
+[    3.682751] enter aml_platform_pcm_new (codec_dai: pcm2bt-pcm 0 cpu_dai: aml-dai1 1)
+[    3.690543] enter aml_pcm_preallocate_dma_buffer stream: 0
+[    3.696125] aml_pcm_preallocate_dma_buffer allcoate buf->area: c82e9000 buf->addr: 0x87290000 buf->bytes: 65536
+[    3.706228] enter aml_pcm_preallocate_dma_buffer stream: 1
+[    3.711714] aml_pcm_preallocate_dma_buffer allcoate buf->area: c82fa000 buf->addr: 0x870d0000 buf->bytes: 65536
+[    3.721665] aml_m3_card aml_m3_sound_card.2:  pcm2bt-pcm <-> aml-dai1 mapping ok
+[    3.729114] enter aml_set_bias_level level: 1
+[    3.733383] enter aml_set_bias_level level: 2
+[    3.737788] enter aml_set_bias_level level: 1
+[    3.742084] enter aml_set_bias_level level: 2
+[    3.746457] enter aml_set_bias_level level: 1
+[    3.750945] enter aml_set_bias_level level: 2
+[    3.755201] enter aml_set_bias_level level: 1
+[    3.759520] enter aml_set_bias_level level: 1
+[    3.763833] enter aml_set_bias_level level: 2
+[    3.768214] enter aml_set_bias_level level: 1
+[    3.772533] enter aml_set_bias_level level: 2
+[    3.776928] enter aml_set_bias_level level: 2
+[    3.784581] input: AML-M3 hp switch as /devices/platform/aml_m3_sound_card.2/sound/card0/input4
+[    3.791005] enter aml_set_bias_level level: 1
+[    3.794285] enter aml_set_bias_level level: 2
+[    3.798753] enter aml_set_bias_level level: 1
+[    3.802985] enter aml_set_bias_level level: 2
+[    3.807525] enter aml_set_bias_level level: 1
+[    3.811683] enter aml_set_bias_level level: 2
+[    3.816294] =aml_m3_pinmux_init==,aml_m3_pinmux_init done,---0
+[    3.822777] GACT probability NOT on
+[    3.825350] Mirror/redirect action on
+[    3.829176] u32 classifier
+[    3.831691]     Actions configured
+[    3.835090] Netfilter messages via NETLINK v0.30.
+[    3.839940] nf_conntrack version 0.5.0 (1813 buckets, 7252 max)
+[    3.846894] ctnetlink v0.93: registering with nfnetlink.
+[    3.851074] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    3.858246] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    3.864822] xt_time: kernel timezone is -0000
+[    3.868730] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    3.873610] arp_tables: (C) 2002 David S. Miller
+[    3.878301] TCP: cubic registered
+[    3.881370] Initializing XFRM netlink socket
+[    3.887256] NET: Registered protocol family 10
+[    3.890914] mip6: Mobile IPv6
+[    3.893071] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    3.898972] sit: IPv6 over IPv4 tunneling driver
+[    3.905140] NET: Registered protocol family 17
+[    3.907775] NET: Registered protocol family 15
+[    3.912021] Bridge firewalling registered
+[    3.916012] NET: Registered protocol family 35
+[    3.920689] Key type dns_resolver registered
+[    3.924865] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    3.932295] Registering SWP/SWPB emulation handler
+[    3.937271] enter meson_pm_probe!
+[    3.944124] aml_rtc rtc.0: setting system clock to 1970-01-01 00:00:08 UTC (8)
+[    3.948033] meson_cpufreq: no voltage_control prop
+[    3.952363] voltage_control = 0
+[    3.956445] ALSA device list:
+[    3.958555]   #0: AML-M3
+[    3.961486] config uart_ao_ttyS0:: Character length 8bits/char
+[    3.976821] Changing uart_ao_ttyS0: baud from 0 to 115200
+[    3.998454] force enable DISCARD here for ext4 fs
+[    4.002008] checked enable EXT4 DISCARD here
+[    4.002049] EXT4-fs (mmcblk0p10): mounting with "discard" option, but the device does not support discard
+[    4.011983] EXT4-fs (mmcblk0p10): mounted filesystem without journal. Opts: (null)
+[    4.019028] VFS: Mounted root (ext4 filesystem) readonly on device 179:10.
+[    4.030661] devtmpfs: mounted
+[    4.030890] Freeing unused kernel memory: 180K (c07a0000 - c07cd000)
+[    4.185107] ** enable watchdog
+[    4.185444] ** enable watchdog
+[    8.200423] EXT4-fs (mmcblk0p10): re-mounted. Opts: (null)
+[    8.210965] ** enable watchdog
+[   11.248268] Loading modules backported from Linux version master-2014-05-22-0-gf2032ea
+[   11.250554] Backport generated by backports.git backports-20140320-37-g5c33da0
+[   11.269340] lib80211: common routines for IEEE802.11 drivers
+[   11.269389] lib80211_crypt: registered algorithm 'NULL'
+[   11.285896] lib80211_crypt: registered algorithm 'CCMP'
+[   11.297783] lib80211_crypt: registered algorithm 'TKIP'
+[   11.300346] lib80211_crypt: registered algorithm 'WEP'
+[   13.916863] force enable DISCARD here for ext4 fs
+[   13.925249] checked enable EXT4 DISCARD here
+[   13.925274] EXT4-fs (mmcblk0p11): mounting with "discard" option, but the device does not support discard
+[   13.925285] EXT4-fs (mmcblk0p11): mounted filesystem with ordered data mode. Opts: nodelalloc
+[   13.985065] name=emmc_key nand_key
+[   13.985087] device name=nand_key open error
+[   13.985097] aml_keys: version 0 can not be init c08039dc
+[   13.985103] name=emmc_key emmc_key
+[   13.992236] emmc read lba=0x820, blocks=0x100 OK!
+[   13.999789] emmc read lba=0x820, blocks=0x100 OK!
+[   14.000403] register_aes_algorithm:482,old way
+[   15.836878] force enable DISCARD here for ext4 fs
+[   15.849672] checked enable EXT4 DISCARD here
+[   15.849697] EXT4-fs (mmcblk0p12): mounting with "discard" option, but the device does not support discard
+[   15.849708] EXT4-fs (mmcblk0p12): mounted filesystem with ordered data mode. Opts: nodelalloc
+[   18.713780] BT_RADIO going: off
+[   18.713799] BCM_BT: going OFF
+[   18.748808] config uart_a_ttyS1:: Character length 8bits/char
+[   18.766845] Changing uart_a_ttyS1: baud from 0 to 115200
+[   18.786974] config uart_a_ttyS1:: Character length 8bits/char
+[   18.806838] Changing uart_a_ttyS1: baud from 115200 to 115200
+[   18.860161] config uart_a_ttyS1:: Character length 8bits/char
+[   18.876784] Changing uart_a_ttyS1: baud from 115200 to 3000000
+[   19.528495] dhd_module_init: in
+[   19.528516] wifi_setup_dt
+[   19.528524] wifi_request_32k_clk : ON-->ON for sdio_wifi
+[   19.528533] interrupt_pin(153) : (null)
+[   19.528566] interrupt_pin(153) : sdio_wifi
+[   19.528573] power_on_pin(33) : (null)
+[   19.528587] power_on_pin(33) : sdio_wifi
+[   19.528624] ======== bcm_wlan_set_plat_data ========
+[   19.528631] host_oob_irq: 68
+[   19.528636] host_oob_irq_flags=1044
+[   19.528642] dhd_wifi_platform_load: Enter
+[   19.528697] Power-up adapter 'DHD generic adapter'
+[   19.528707] wifi_platform_set_power = 1
+[   19.528714] ======== PULL WL_REG_ON HIGH! ========
+[   19.528722] WIFI  Disable! 33
+[   19.583000] config uart_a_ttyS1:: Character length 8bits/char
+[   19.596937] Changing uart_a_ttyS1: baud from 3000000 to 115200
+[   19.651062] config uart_a_ttyS1:: Character length 8bits/char
+[   19.666843] Changing uart_a_ttyS1: baud from 115200 to 3000000
+[   19.770890] >>>ip_mc_inc_group(): addr = 224.0.0.1
+[   20.633108] WIFI  Enable! 33
+[   21.432472] enter aml_platform_open (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   21.432497]
+[   21.432497] aml-platform streams:
+[   21.432512] substream#0 ptr: c7bd2400 type: playback name: subdevice #0 interface: I2S
+[   21.677119] ----enter aml_asoc_hw_params stream: playback rate: 48000 format: 10, mode: master
+[   21.678043] [aml-i2s-dai]i2s dma c80e3000,phy addr 87000000,mode 3,ch 4
+[   21.679310] enter aml_set_bias_level level: 1
+[   21.679328] enter aml_set_bias_level level: 2
+[   21.679369] enter aml_set_bias_level level: 1
+[   21.679378] enter aml_set_bias_level level: 2
+[   21.679400] enter aml_set_bias_level level: 1
+[   21.679407] enter aml_set_bias_level level: 2
+[   21.679479] aml_m3_codec_mute mute=0
+[   21.680047] aml_m3_codec_mute mute=1
+[   21.680067] enter aml_platform_close (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   22.566799] wifi_platform_bus_enumerate device present 1
+[   22.566817] ======== Card detection to detect SDIO card! ========
+[   23.566695] [aml_sdio_timeout] time_start_cnt:999
+[   23.566695] [aml_sdio_print_err] sd: Timeout error, Cmd52 arg 0xc00, Xfer 0 Bytes, host->xfer_step=14, host->cmd_is_stop=0, pdata->port=1, virqs=0x113, virqc=0x3f001f00, conf->cmd_clk_divide=249, pdata->clkc=249, conf->bus_width=0, pdata->width=0, conf=0x416270f9, clock=400000
+[   23.566695] [aml_sdio_timeout] time_start_cnt:999
+[   23.566695] [aml_sdio_print_err] sd: Timeout error, Cmd52 arg 0x80000c08, Xfer 0 Bytes, host->xfer_step=14, host->cmd_is_stop=0, pdata->port=1, virqs=0x13, virqc=0x3f003f00, conf->cmd_clk_divide=249, pdata->clkc=249, conf->bus_width=0, pdata->width=0, conf=0x416270f9, clock=400000
+[   23.566695] [aml_sdio_timeout] time_start_cnt:996
+[   23.566695] [aml_sdio_print_err] sd: Timeout error, Cmd8 arg 0x1aa, Xfer 0 Bytes, host->xfer_step=14, host->cmd_is_stop=0, pdata->port=1, virqs=0x13, virqc=0x1f001f00, conf->cmd_clk_divide=249, pdata->clkc=249, conf->bus_width=0, pdata->width=0, conf=0x416270f9, clock=400000
+[   25.566716] <4>[   25.581266] sd: queuing unknown CIS tuple 0x91 (3 bytes)
+[   25.581495] sd: new high speed SDIO card at address 0001, clock 25000000, 4-bit-bus-width
+[   25.597566] [sdio_reinit] finish
+[   25.622605] bcmsdh_register: register client driver
+[   25.622834] bcmsdh_sdmmc: bcmsdh_sdmmc_probe Enter
+[   25.622974] bcmsdh_sdmmc: bcmsdh_sdmmc_probe Enter
+[   25.622988] bus num (host idx)=1, slot num (rca)=1
+[   25.622996] found adapter info 'DHD generic adapter'
+[   25.623430] dhdsdio_probe : no mutex held. set lock
+[   25.623597] F1 signature read @0x18000000=0x15464345
+[   25.628408] F1 signature OK, socitype:0x1 chip:0x4345 rev:0x6 pkg:0x4
+[   25.629270] DHD: dongle ram size is set to 819200(orig 819200) at 0x198000
+[   25.629405] dhd_conf_set_chiprev: chip=0x4345, chiprev=6
+[   25.630643] dhd_conf_read_config: PM = 0
+[   25.638425] wl_create_event_handler(): thread:wl_event_handler:cc8 started
+[   25.638934] tsk Enter, tsk = 0xc69213fc
+[   25.641765] dhd_attach(): thread:dhd_watchdog_thread:ccb started
+[   25.646766] dhd_attach(): thread:dhd_dpc:ccc started
+[   25.647436] dhd_dpc_thread: set dpc_cpucore 0 from config.txt
+[   25.647477] dhd_attach(): thread:dhd_rxf:ccd started
+[   25.647498] dhd_deferred_work_init: work queue initialized
+[   25.647844] dhdsdio_probe_init: set use_rxchain 1 from config.txt
+[   25.674263] Dongle Host Driver, version 1.201.59.5 (r506368)
+[   25.674263] Compiled in drivers/net/wireless/bcmdhd
+[   25.687343] Register interface [wlan0]  MAC: 00:90:4c:11:22:33
+[   25.687343]
+[   25.687367] dhd_prot_ioctl : bus is down. we have nothing to do
+[   25.689483] bcmsdh_oob_intr_unregister: Enter
+[   25.689503] bcmsdh_oob_intr_unregister: irq is not registered
+[   25.689526] dhd_txglom_enable: enable 0
+[   25.689535] dhd_bus_devreset:  WLAN OFF DONE
+[   25.689816] wifi_platform_set_power = 0
+[   25.689830] ======== PULL WL_REG_ON LOW! ========
+[   25.689839] dhdsdio_probe : the lock is released.
+[   25.697822] dhd_module_init: Exit err=0
+[   25.738426] dhd_open: Enter c6faa800
+[   25.738455]
+[   25.738455] Dongle Host Driver, version 1.201.59.5 (r506368)
+[   25.738455] Compiled in drivers/net/wireless/bcmdhd
+[   25.738468] wl_android_wifi_on in 1
+[   25.738476] wl_android_wifi_on in 2: g_wifi_on=0
+[   25.738484] wifi_platform_set_power = 1
+[   25.738490] ======== PULL WL_REG_ON HIGH! ========
+[   25.738503] WIFI  Disable! 33
+[   25.771566] force enable DISCARD here for ext4 fs
+[   25.787382] EXT4-fs (mmcblk0p3): recovery complete
+[   25.787410] checked enable EXT4 DISCARD here
+[   25.787420] EXT4-fs (mmcblk0p3): mounting with "discard" option, but the device does not support discard
+[   25.787430] EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts:
+[   25.972110] >>>ip_mc_leave_group():leave group 239.255.255.250 on interface 127.0.0.1, ifindex = 0
+[   26.057369] WIFI  Enable! 33
+[   26.566691] sdio_reset_comm():
+[   26.581274]
+[   26.581274]
+[   26.581274] dhd_bus_devreset: == WLAN ON ==
+[   26.581459] F1 signature read @0x18000000=0x15464345
+[   26.585080] F1 signature OK, socitype:0x1 chip:0x4345 rev:0x6 pkg:0x4
+[   26.585860] DHD: dongle ram size is set to 819200(orig 819200) at 0x198000
+[   26.586144] dhdsdio_probe_init: set use_rxchain 1 from config.txt
+[   26.586348] dhd_conf_read_config: PM = 0
+[   26.586374] dhd_conf_set_fw_name_by_chip: firmware_path=/etc/wifi/fw_bcmdhd.bin
+[   26.586383] Final fw_path=/etc/wifi/fw_bcmdhd.bin
+[   26.586389] Final nv_path=/data/etc/wifi/nvram.txt
+[   26.586394] Final conf_path=/etc/wifi/config.txt
+[   26.686788] enter aml_set_bias_level level: 1
+[   26.686807] enter aml_set_bias_level level: 2
+[   26.686821] enter aml_set_bias_level level: 1
+[   26.686829] enter aml_set_bias_level level: 2
+[   26.686838] enter aml_set_bias_level level: 1
+[   26.686844] enter aml_set_bias_level level: 2
+[   26.742006] NVRAM version:  Cloned from bcm94345wlselg.txt
+[   26.742955] dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+[   26.820301] dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+[   26.820643] bcmsdh_oob_intr_register: Enter
+[   26.820656] bcmsdh_oob_intr_register: HW_OOB enabled
+[   26.820664] bcmsdh_oob_intr_register OOB irq=68 flags=414
+[   26.820733] bcmsdh_oob_intr_register: enable_irq_wake
+[   26.820746] bcmsdh_oob_intr_register: enable_irq_wake failed with -6
+[   26.822364] dhd_conf_set_band: Set band 0
+[   26.822679] dhd_preinit_ioctls: Set tcpack_sup_mode 0
+[   26.825242] Firmware up: op_mode=0x0005, MAC=00:90:4c:11:22:33
+[   26.825257] dhd_conf_set_country: Set country CN, revision 38
+[   26.828270] CONSOLE:  1024
+[   26.828290] CONSOLE: 000000.045 wl0: Broadcom BCM4345 802.11 Wireless Controller 7.45.77.m2.t1 (r2285)
+[   26.828299] CONSOLE: 000000.046 TCAM: 256 used: 218 exceed:0
+[   26.828308] CONSOLE: 000000.047 reclaim section 1: Returned 114560 bytes to the heap
+[   26.828316] CONSOLE: 000000.047 reclaim section 4: Returned 44 bytes to the heap
+[   26.828322] CONSOLE: 000000.047 sdpcmd_dpc: Enable
+[   26.847922] Country code: CN (CN/38)
+[   26.848429] dhd_conf_set_roam: Set roam_off 1
+[   26.851930] dhd_conf_set_txbf: set txbf 1
+[   26.852522] dhd_conf_set_txbf Set txbf to 1 failed -23
+[   26.861638] Firmware version = wl0: May  6 2016 14:11:48 version 7.45.77.m2.t1 (r2285) FWID 01-b9ebfd9c es5.c4
+[   26.861660]   Driver: 1.201.59.5 (r506368)
+[   26.861660]   Firmware: wl0: May  6 2016 14:11:48 version 7.45.77.m2.t1 (r2285) FWID 01-b9ebfd9c es5.c4
+[   26.862044] dhd_txglom_enable: enable 1
+[   26.862058] dhd_conf_set_disable_proptx: set disable_proptx 0
+[   26.864696] dhd_wlfc_hostreorder_init(): successful bdcv2 tlv signaling, 64
+[   26.865336] wl_android_wifi_on: Success
+[   26.868138] CONSOLE:
+[   26.868159] CONSOLE: 000000.072 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+[   26.868169] CONSOLE: 000000.079 wl0: wlc_iovar_op: txbf BCME -23 (Unsupported)
+[   26.868178] CONSOLE: 000000.092 wl0: wlc_iovar_op: pfnlbest BCME -14 (Buffer too short)
+[   26.868185] CONSOLE: 000000.093 wl0: wl_open
+[   26.887249] CONSOLE: 000000.105 wl0: wlc_phy_set_regtbl_on_femctrl: FIXME bt_coex
+[   26.887271] CONSOLE: 000000.110 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+[   26.907890] dhd_open: Exit ret=0
+[   26.911945] >>>ip_mc_inc_group(): addr = 224.0.0.1
+[   26.913181] >>>ip_mc_leave_group(): mc_list is empty, ret is 0
+[   26.913200] >>>ip_mc_dec_group(): addr = 239.255.255.250
+[   26.926813] >>> dst_output(): 0: 0.0.0.0 ==> 0.0.0.0. skb_dst(skb)->output = c04d72a0
+[   26.926864] >>> dst_neigh_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   26.926873] >>> dst_neigh_output(): callback c0424ed8
+[   26.926883] >>> neigh_resolve_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   26.926895] >>> dev_queue_xmit(): 0: 0.0.0.0 ==> 0.0.0.0
+[   26.926910] >>> dev_hard_start_xmit(): callback bf08ebb0
+[   27.706758] >>> dst_output(): 0: 0.0.0.0 ==> 0.0.0.0. skb_dst(skb)->output = c04d72a0
+[   27.706802] >>> dst_neigh_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   27.706812] >>> dst_neigh_output(): callback c0424ed8
+[   27.706821] >>> neigh_resolve_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   27.706833] >>> dev_queue_xmit(): 0: 0.0.0.0 ==> 0.0.0.0
+[   27.706847] >>> dev_hard_start_xmit(): callback bf08ebb0
+[   27.913468] >>>ip_mc_join_group(): join group 239.255.255.250 on interface 127.0.0.1, ifindex = 0
+[   27.913495] >>>ip_mc_inc_group(): addr = 239.255.255.250
+[   27.926730] >>>igmp_send_report: V2
+[   28.280904] dhd_stop: Enter c6faa800
+[   28.353682] wl_android_wifi_off in 1
+[   28.353704] wl_android_wifi_off in 2: g_wifi_on=1
+[   28.354302] bcmsdh_oob_intr_unregister: Enter
+[   28.354342] dhd_txglom_enable: enable 0
+[   28.354351] dhd_bus_devreset:  WLAN OFF DONE
+[   28.354438] wifi_platform_set_power = 0
+[   28.354448] ======== PULL WL_REG_ON LOW! ========
+[   28.354454] wl_android_wifi_off out
+[   28.354462] dhd_stop: Exit
+[   28.354600] >>>ip_mc_dec_group(): addr = 224.0.0.1
+[   28.366799] >>> dst_output(): 0: 0.0.0.0 ==> 0.0.0.0. skb_dst(skb)->output = c04d72a0
+[   28.366850] >>> dst_neigh_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   28.366859] >>> dst_neigh_output(): callback c0424ed8
+[   28.366868] >>> neigh_resolve_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   28.366880] >>> dev_queue_xmit(): 0: 0.0.0.0 ==> 0.0.0.0
+[   28.954231] BT_RADIO going: on
+[   28.954250] BCM_BT: going ON
+[   28.980007] enter aml_platform_open (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   28.980030]
+[   28.980030] aml-platform streams:
+[   28.980045] substream#0 ptr: c7bd2400 type: playback name: subdevice #0 interface: I2S
+[   29.074252] ----enter aml_asoc_hw_params stream: playback rate: 48000 format: 10, mode: master
+[   29.075056] [aml-i2s-dai]i2s dma c80e3000,phy addr 87000000,mode 3,ch 4
+[   29.105805] enter aml_set_bias_level level: 1
+[   29.105826] enter aml_set_bias_level level: 2
+[   29.105868] enter aml_set_bias_level level: 1
+[   29.105878] enter aml_set_bias_level level: 2
+[   29.105899] enter aml_set_bias_level level: 1
+[   29.105907] enter aml_set_bias_level level: 2
+[   29.105982] aml_m3_codec_mute mute=0
+[   29.134091] aiu i2s playback enable
+[   29.134091]
+[   29.134487] aiu i2s playback disable
+[   29.134487]
+[   29.141115] aml_m3_codec_mute mute=1
+[   29.141140] enter aml_platform_close (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   29.150222] enter aml_platform_open (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   29.150248]
+[   29.150248] aml-platform streams:
+[   29.150262] substream#0 ptr: c7bd2400 type: playback name: subdevice #0 interface: I2S
+[   29.233244] dhd_open: Enter c6faa800
+[   29.233275]
+[   29.233275] Dongle Host Driver, version 1.201.59.5 (r506368)
+[   29.233275] Compiled in drivers/net/wireless/bcmdhd
+[   29.233288] wl_android_wifi_on in 1
+[   29.233295] wl_android_wifi_on in 2: g_wifi_on=0
+[   29.233302] wifi_platform_set_power = 1
+[   29.233308] ======== PULL WL_REG_ON HIGH! ========
+[   29.233321] WIFI  Disable! 33
+[   29.314689] ----enter aml_asoc_hw_params stream: playback rate: 48000 format: 10, mode: master
+[   29.315378] [aml-i2s-dai]i2s dma c80e3000,phy addr 87000000,mode 3,ch 4
+[   29.381137] enter aml_set_bias_level level: 1
+[   29.381157] enter aml_set_bias_level level: 2
+[   29.381197] enter aml_set_bias_level level: 1
+[   29.381207] enter aml_set_bias_level level: 2
+[   29.381227] enter aml_set_bias_level level: 1
+[   29.381234] enter aml_set_bias_level level: 2
+[   29.381310] aml_m3_codec_mute mute=0
+[   29.386008] aiu i2s playback enable
+[   29.386008]
+[   29.402450] BT_RADIO going: off
+[   29.402470] BCM_BT: going OFF
+[   29.447963] config uart_a_ttyS1:: Character length 8bits/char
+[   29.466775] Changing uart_a_ttyS1: baud from 3000000 to 3000000
+[   29.487056] config uart_a_ttyS1:: Character length 8bits/char
+[   29.506898] Changing uart_a_ttyS1: baud from 3000000 to 115200
+[   29.559819] config uart_a_ttyS1:: Character length 8bits/char
+[   29.576842] Changing uart_a_ttyS1: baud from 115200 to 3000000
+[   30.297158] config uart_a_ttyS1:: Character length 8bits/char
+[   30.317751] Changing uart_a_ttyS1: baud from 3000000 to 115200
+[   30.321798] WIFI  Enable! 33
+[   30.366605] config uart_a_ttyS1:: Character length 8bits/char
+[   30.376807] Changing uart_a_ttyS1: baud from 115200 to 3000000
+[   30.946825] sdio_reset_comm():
+[   30.966333]
+[   30.966333]
+[   30.966333] dhd_bus_devreset: == WLAN ON ==
+[   30.966507] F1 signature read @0x18000000=0x15464345
+[   30.973515] F1 signature OK, socitype:0x1 chip:0x4345 rev:0x6 pkg:0x4
+[   30.974338] DHD: dongle ram size is set to 819200(orig 819200) at 0x198000
+[   30.974637] dhdsdio_probe_init: set use_rxchain 1 from config.txt
+[   30.974853] dhd_conf_read_config: PM = 0
+[   30.974880] dhd_conf_set_fw_name_by_chip: firmware_path=/etc/wifi/fw_bcmdhd_apsta.bin
+[   30.974888] Final fw_path=/etc/wifi/fw_bcmdhd_apsta.bin
+[   30.974895] Final nv_path=/data/etc/wifi/nvram.txt
+[   30.974900] Final conf_path=/etc/wifi/config.txt
+[   31.145378] NVRAM version:  Cloned from bcm94345wlselg.txt
+[   31.146406] dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+[   31.221750] dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+[   31.222113] bcmsdh_oob_intr_register: Enter
+[   31.222127] bcmsdh_oob_intr_register: HW_OOB enabled
+[   31.222135] bcmsdh_oob_intr_register OOB irq=68 flags=414
+[   31.222171] bcmsdh_oob_intr_register: enable_irq_wake
+[   31.222182] bcmsdh_oob_intr_register: enable_irq_wake failed with -6
+[   31.223763] dhd_conf_set_band: Set band 0
+[   31.224091] dhd_preinit_ioctls: Set tcpack_sup_mode 0
+[   31.224107] dhd_tcpack_suppress_set 376: already set to 0
+[   31.225835] Firmware up: op_mode=0x0002, MAC=00:90:4c:11:22:33
+[   31.225854] dhd_conf_set_country: Set country CN, revision 38
+[   31.231005] CONSOLE: v 54 cccap 0x18680009 maccap 0xa0018305 band 5G, phy_type 11 phy_rev 20
+[   31.231027] CONSOLE: 000000.038 wl0: wlc_stf_txcore_shmem_write: No clock
+[   31.231038] CONSOLE: 000000.038 wl0: wlc_attach_antgain_init: Invalid antennas available in srom, using 2dB
+[   31.231048] CONSOLE: 000000.039 wl0: wlc_ampdu_tx_set: AGG Mode = MAC+AQM txmaxpkts 0 txmaxpkts_agg 1024
+[   31.231057] CONSOLE: 000000.045 wl0: Broadcom BCM4345 802.11 Wireless Controller 7.45.77.m2.t1 (r2285)
+[   31.231064] CONSOLE: 000000.045 TCAM: 256 used: 142 exceed:0
+[   31.231073] CONSOLE: 000000.046 reclaim section 1: Returned 100412 bytes to the heap
+[   31.231081] CONSOLE: 000000.046 reclaim section 4: Returned 44 bytes to the heap
+[   31.231087] CONSOLE: 000000.047 sdpcmd_dpc: Enable
+[   31.248356] Country code: CN (CN/38)
+[   31.248896] dhd_conf_set_roam: Set roam_off 1
+[   31.250973] dhd_conf_set_txbf: set txbf 1
+[   31.251527] dhd_conf_set_txbf Set txbf to 1 failed -23
+[   31.255266] dhd_arp_offload_enable: failed to enabe ARP offload to 0, retcode = -23
+[   31.255961] dhd_arp_offload_set: failed to set ARP offload mode to 0x0, retcode = -23
+[   31.256569] Firmware version = wl0: May  6 2016 14:13:05 version 7.45.77.m2.t1 (r2285) FWID 01-b467fdfe
+[   31.256592]   Driver: 1.201.59.5 (r506368)
+[   31.256592]   Firmware: wl0: May  6 2016 14:13:05 version 7.45.77.m2.t1 (r2285) FWID 01-b467fdfe
+[   31.259020] CONSOLE:
+[   31.259044] CONSOLE: 000000.070 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+[   31.259053] CONSOLE: 000000.076 wl0: wlc_iovar_op: txbf BCME -23 (Unsupported)
+[   31.259062] CONSOLE: 000000.080 wl0: wlc_iovar_op: arpoe BCME -23 (Unsupported)
+[   31.259069] CONSOLE: 000000.081 wl0: unable to find iovar "arp_ol"
+[   31.259077] CONSOLE: 000000.081 wl0: wlc_iovar_op: arp_ol BCME -23 (Unsupported)
+[   31.259196] dhd_txglom_enable: enable 1
+[   31.259210] dhd_conf_set_disable_proptx: set disable_proptx 0
+[   31.261114] dhd_wlfc_init(): successfully enabled bdcv2 tlv signaling, 79
+[   31.261686] dhd_wlfc_init(): wlfc_mode=0x0, ret=-23
+[   31.262453] wl_android_wifi_on: Success
+[   31.271159] CONSOLE: 000000.086 wl0: wlc_iovar_op: wlfc_mode BCME -23 (Unsupported)
+[   31.271181] CONSOLE: 000000.087 wl0: unable to find iovar "pfnlbest"
+[   31.271191] CONSOLE: 000000.087 wl0: wlc_iovar_op: pfnlbest BCME -23 (Unsupported)
+[   31.271198] CONSOLE: 000000.088 wl0: wl_open
+[   31.278131] CONSOLE: 000000.100 wl0: wlc_phy_set_regtbl_on_femctrl: FIXME bt_coex
+[   31.287680] aiu i2s playback disable
+[   31.287680]
+[   31.288777] CONSOLE: 000000.105 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+[   31.289072] aml_m3_codec_mute mute=1
+[   31.289091] enter aml_platform_close (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   31.306036] dhd_open: Exit ret=0
+[   31.306188] >>>ip_mc_inc_group(): addr = 224.0.0.1
+[   31.316790] >>> dst_output(): 0: 0.0.0.0 ==> 0.0.0.0. skb_dst(skb)->output = c04d72a0
+[   31.316828] >>> dst_neigh_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   31.316838] >>> neigh_hh_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   31.316848] >>> dev_queue_xmit(): 0: 0.0.0.0 ==> 0.0.0.0
+[   31.316864] >>> dev_hard_start_xmit(): callback bf08ebb0
+[   31.329081] enter aml_platform_open (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   31.329106]
+[   31.329106] aml-platform streams:
+[   31.329121] substream#0 ptr: c7bd2400 type: playback name: subdevice #0 interface: I2S
+[   31.380860] ----enter aml_asoc_hw_params stream: playback rate: 48000 format: 10, mode: master
+[   31.384459] [aml-i2s-dai]i2s dma c80e3000,phy addr 87000000,mode 3,ch 4
+[   31.384568] enter aml_set_bias_level level: 1
+[   31.384580] enter aml_set_bias_level level: 2
+[   31.385828] enter aml_set_bias_level level: 1
+[   31.385846] enter aml_set_bias_level level: 2
+[   31.385874] enter aml_set_bias_level level: 1
+[   31.385883] enter aml_set_bias_level level: 2
+[   31.385961] aml_m3_codec_mute mute=0
+[   31.396604] aiu i2s playback enable
+[   31.396604]
+[   31.700621] Disconnect STA : ff:ff:ff:ff:ff:ff scb_val.val 3
+[   31.704993] netdev_ifidx(4), chan_type(1) target channel(6)
+[   31.717361] aiu i2s playback disable
+[   31.717361]
+[   31.717519] aml_m3_codec_mute mute=1
+[   31.717538] enter aml_platform_close (codec_dai: AML-M3 0 cpu_dai: aml-dai0 0)
+[   31.720830] CONSOLE: 000000.525 wl0: bc/mc deauth_reason on STA BSS?
+[   31.720851] CONSOLE: 000000.537 wl0: wl_open
+[   31.728115] CONSOLE: 000000.549 wl0: wlc_phy_set_regtbl_on_femctrl: FIXME bt_coex
+[   31.737862] CONSOLE: 000000.555 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+[   31.787957] CONSOLE: 000000.602 wl0: link up (wl0)
+[   31.787980] CONSOLE: 000000.602 wl_nd_ra_filter_clear_cache: Enter..
+[   31.798244] >>>ip_mc_leave_group():leave group 224.0.0.251 on interface 192.168.0.1, ifindex = 4
+[   31.798863] >>>ip_mc_leave_group(): mc_list is empty, ret is 0
+[   31.798882] >>>ip_mc_dec_group(): addr = 224.0.0.251
+[   31.798914] >>>ip_mc_join_group(): join group 224.0.0.251 on interface 192.168.0.1, ifindex = 4
+[   31.798928] >>>ip_mc_inc_group(): addr = 224.0.0.251
+[   31.813560] >>>ip_mc_leave_group():leave group 239.255.255.250 on interface 192.168.0.1, ifindex = 0
+[   31.813583] >>>ip_mc_leave_group(): mc_list is empty, ret is 0
+[   31.813593] >>>ip_mc_dec_group(): addr = 239.255.255.250
+[   31.816754] >>>igmp_send_report: V2
+[   31.950725] nf_conntrack: automatic helper assignment is deprecated and it will be removed soon. Use the iptables CT target to attach helpers instead.
+[   32.066807] >>> dst_output(): 0: 0.0.0.0 ==> 0.0.0.0. skb_dst(skb)->output = c04d72a0
+[   32.066852] >>> dst_neigh_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   32.066861] >>> dst_neigh_output(): callback c0424ed8
+[   32.066871] >>> neigh_resolve_output(): 0: 0.0.0.0 ==> 0.0.0.0
+[   32.066883] >>> dev_queue_xmit(): 0: 0.0.0.0 ==> 0.0.0.0
+[   32.066919] >>> dev_hard_start_xmit(): callback bf08ebb0
+[   32.813758] >>>ip_mc_join_group(): join group 239.255.255.250 on interface 192.168.0.1, ifindex = 0
+[   32.813787] >>>ip_mc_inc_group(): addr = 239.255.255.250
+[   32.818576] >>>ip_mc_leave_group():leave group 239.255.255.250 on interface 127.0.0.1, ifindex = 0
+[   32.818600] >>>imr_multiaddr = 239.255.255.250, imr_address = 127.0.0.1, imr_ifindex = 1
+[   32.818614] >>>ip_mc_dec_group(): addr = 239.255.255.250
+[   32.818628] >>>igmp_send_report: V1
+[   32.826750] >>>igmp_send_report: V2
+[   34.416710] >>>igmp_send_report: V2
+[   34.706707] >>>igmp_send_report: V2
+[   36.726877] enter aml_set_bias_level level: 1
+[   36.726897] enter aml_set_bias_level level: 2
+[   36.726911] enter aml_set_bias_level level: 1
+[   36.726919] enter aml_set_bias_level level: 2
+[   36.726927] enter aml_set_bias_level level: 1
+[   36.726934] enter aml_set_bias_level level: 2
+[   36.834602] wl_notify_connect_status_ap: connected device f4:8c:50:8f:52:b4
+[   36.850002] >>> dev_queue_xmit(): 0: 0.0.0.0 ==> 0.0.0.0
+[   36.850028] >>> dev_hard_start_xmit(): callback bf08ebb0
+[   36.857998] CONSOLE: 000005.677 wl0: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 64 policy 1
+[   36.909666] CONSOLE: 000005.729 wl0: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 64 policy 1
+[   37.270481] >>> dst_input(): 0: 0.0.0.0 ==> 0.0.0.0. skb_dst(skb)->input = c04d7d74
+[   38.616732] >>>igmp_send_report: V2
+[   43.206716] >>>igmp_send_report: V2
+[   98.077398] CONSOLE: 000066.561 wl0: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 64 policy 1
+[   98.077422] CONSOLE: 000066.564 wl0: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 64 policy 1
+[   98.786738] >>>igmp_send_report: V2
+[  103.266742] >>>igmp_send_report: V2
+[  104.546770] >>>igmp_send_report: V2
+[  105.616739] >>>igmp_send_report: V2
+[  109.686740] >>>igmp_send_report: V2
+[  118.266735] >>>igmp_send_report: V2
+[  158.967716] CONSOLE: 000127.566 wl0: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 64 policy 1
+[  158.967742] CONSOLE: 000127.567 wl0: wlc_ampdu_recv_addba_resp: Failed. status 37 wsize 64 policy 1
+[  165.666743] >>>igmp_send_report: V2
+[  175.486759] >>>igmp_send_report: V2
+[  176.996752] >>>igmp_send_report: V2
+[  178.466735] >>>igmp_send_report: V2
+[  185.486735] >>>igmp_send_report: V2
+[  189.986754] >>>igmp_send_report: V2
