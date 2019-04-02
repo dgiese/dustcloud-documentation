@@ -1,0 +1,15 @@
+Warning: For this you need to open the device. Make sure that you never touch the power supply, as it is connected directly to mains (110V/220V).
+
+Warning2: This works so far only for the versions without homekit. The Aqara Homekit versions have a different firmware, where additional steps are required.
+
+Warning3: Be careful what you do, as there is no fallback or recovery method.
+
+1. Open the device. Be careful with removing the screws, as the plastic inside breaks easily (it is adviced to losen up all screws equaly to avoid that).
+2. Connect your serial adapter to GND, TX and RX (see pinout). Do not connect VCC/3.3V.
+3. Setup your serial port with 115200 Baud, Flow control off!
+4. Power on Gateway, as soon as you see any output, press multiple times "Enter" to exit in the U-Boot shell
+5. setenv bootargs 'console=ttymxc0,115200 ubi.mtd=3 root=ubi0:rootfs rootfstype=ubifs cma=96M mtdparts=gpmi-nand:3m(boot),7m(kernel),1m(dtb),-(rootfs) rw single init=/bin/bash'
+6. As soon as you see the prompt, paste this command line: "mv /etc/rc5.d/K10dropbear /etc/rc5.d/S99dropbear"
+6a) (You have only a few seconds time until the watchdog resets the gateway)
+7. redo 2-5
+8. Set the root password by using the command "passwd". You have again only a few seconds time until the watchdog kicks in.
